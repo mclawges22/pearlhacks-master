@@ -1,0 +1,172 @@
+/* Little Miss Priss font import */
+@font-face {
+    font-family: 'LMP';
+    src: url('littlemisspriss-webfont.eot');
+    src: url('littlemisspriss-webfont.eot?#iefix') format('embedded-opentype'),
+         url('littlemisspriss-webfont.woff2') format('woff2'),
+         url('littlemisspriss-webfont.woff') format('woff'),
+         url('littlemisspriss-webfont.ttf') format('truetype'),
+         url('littlemisspriss-webfont.svg#littlemissprissmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	font-family: 'Open Sans', sans-serif
+}
+
+h1, h2, h3, h4 {
+	font-family: 'LMP';
+	letter-spacing: 2px;
+}
+
+a {
+    font-family: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #a27994;
+}
+
+/** Navbar **/
+#menu-wrapper {
+    background-color: #462959;
+    border:none;
+}
+    .menu {
+        text-align: center;
+        color: #ffffff;
+        font-family: 'LMP';
+        letter-spacing: 2px;
+        font-size: 3.5em;
+        padding-bottom: 5px;
+    }
+    #menu-wrapper .menu a {
+        text-decoration: none;
+    }
+    #menu-wrapper .menu a:hover, #menu-wrapper .menu a:active {
+        text-decoration: none;
+        border-bottom: 2px solid;
+        border-color: inherit;
+        color: inherit;
+    }
+    @media screen and (max-width: 1100px) {
+        .menu {
+            font-size:3em;
+        }
+    }
+    @media screen and (max-width: 900px) {
+        .menu {
+            font-size:2.8em;
+        }
+    }
+    @media screen and (max-width: 770px) {
+        #menu-wrapper {
+            display: none;
+        }
+    }
+    @media screen and (min-width: 1300px) {
+        .menu {
+            font-size:3.7em;
+        }
+    }
+/** nav - sticky triangle **/
+#down-triangle {
+    position: relative;
+    width: 35%;
+    left:32.5%;
+    z-index:1050;
+}
+    @media screen and (max-width: 900px) {
+        #down-triangle {
+            width: 44%;
+            left: 28%;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        #down-triangle {
+            width: 70%;
+            left: 15%;
+        }
+    }
+    @media screen and (max-width: 450px) {
+        #down-triangle {
+            width: 100%;
+            left: 0;
+        }
+    }
+
+/** .main - three columns **/
+.main {
+    padding-top:120px;
+    width:100%;
+}
+    .wrapper h2 {
+        color:#a27994;
+        font-size:3em;
+        text-align: center;
+    }
+    .wrapper p {
+        font-size: 1.1em;
+        padding:3px 0;
+        line-height: 1.8em;
+    }
+    .articles {
+        margin-left:2%;
+    }
+        .articles h5 {
+            font-family: 'LMP';
+            font-size: 2.4em;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-top:20px;
+            color:#a27994;
+        }
+    .youtube {
+        width:42%;
+        margin:20px 2%;
+    }
+        .youtube h2:first-child {
+            color:#462959;
+            font-size:3em;
+            padding-bottom:10px;
+        }
+        .youtube p {
+            line-height: 1.2em;
+        }
+        .youtube #organizations {
+            width:100%;
+        }
+        .youtube #organizations .org {
+            float:left;
+            width:44%;
+            margin:10px 3%;
+        }
+        .events img, .youtube .org img {
+            width:100%;
+        }
+    @media screen and (max-width: 990px) {
+        .youtube {
+            width:58%;
+            margin:20px 2% 20px 4%;
+        }
+        .events {
+            width:58%;
+            margin:20px 2% 20px 4%;
+        }
+    }
+    @media screen and (max-width: 770px) {
+        .articles, .youtube, .events {
+            width:100%;
+            margin:20px 5%;
+        }
+        .youtube h2:first-child {
+            font-size: 2.2em;
+
+        }
+        .main a {
+            text-decoration: underline;
+        }
+    }
+

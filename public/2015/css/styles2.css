@@ -1,0 +1,362 @@
+/* Little Miss Priss font import */
+@font-face {
+    font-family: 'LMP';
+    src: url('littlemisspriss-webfont.eot');
+    src: url('littlemisspriss-webfont.eot?#iefix') format('embedded-opentype'),
+         url('littlemisspriss-webfont.woff2') format('woff2'),
+         url('littlemisspriss-webfont.woff') format('woff'),
+         url('littlemisspriss-webfont.ttf') format('truetype'),
+         url('littlemisspriss-webfont.svg#littlemissprissmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	font-family: 'Open Sans', sans-serif
+}
+
+h1, h2, h3, h4 {
+	font-family: 'LMP';
+	letter-spacing: 2px;
+}
+
+strong {
+	font-size:2.8em;
+	font-family: 'LMP';
+	color:#a27994;
+	letter-spacing: 2px;
+	line-height:1.4em;
+}
+
+a {
+	font-family: inherit;
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover, a:active {
+	text-decoration: none;
+    border-bottom: 2px solid;
+    border-color: inherit;
+	color: inherit;
+}
+
+/** Navbar **/
+#menu-wrapper {
+	background-color: #462959;
+	border:none;
+}
+	.menu {
+		text-align: center;
+		color: #ffffff;
+		font-family: 'LMP';
+		letter-spacing: 2px;
+		font-size: 3.5em;
+		padding-bottom: 5px;
+	}
+	@media screen and (max-width: 1100px) {
+		.menu {
+			font-size:3em;
+		}
+	}
+	@media screen and (max-width: 900px) {
+		.menu {
+			font-size:2.8em;
+		}
+	}
+	@media screen and (max-width: 770px) {
+		#menu-wrapper {
+			display: none;
+		}
+	}
+	@media screen and (min-width: 1300px) {
+		.menu {
+			font-size:3.7em;
+		}
+	}
+
+/** First panel - #girl **/
+#girl {
+	background-color: #462959;
+}
+	#girl-inner {
+		z-index: 1050;
+		margin-top:20px;
+	}
+		#girl-inner #cross-leg {
+			width: 120%;
+			margin-left: -10%;
+		}		
+		
+	#girl h2 {
+		text-align: center;
+		color: #ffffff;
+		font-size: 2.6em;
+		margin: 5px 0;
+		width:100%;
+		margin-left:0;
+		font-weight: 500
+	}
+		#girl .tagline {
+			font-size: 1.9em;
+		}
+		#girl .down-carrot {
+			margin:10px 45%;
+			margin-bottom:0;
+			padding-bottom:0;
+		}
+
+	@media screen and (max-width: 770px) {
+		#girl-inner #cross-leg {
+			width: 60%;
+			margin: 0px 20%;
+		}
+		#girl .down-carrot {
+			margin:10px 42%;
+			margin-bottom:0;
+			padding-bottom:0;
+		}
+		#girl h2 {
+			width:100%;
+			margin-left:0;
+		}
+	}
+	@media screen and (max-width: 500px) {
+		#girl {
+			font-size: .85em
+		}
+		#girl-inner #cross-leg {
+			width: 90%;
+			margin: 0px 5%;
+		}
+		#girl h2 {
+			margin-top:0;
+		}
+	}
+#color-sections {
+	width:100%;
+	position:absolute;
+	z-index:2000;
+	left:0;
+	top:60px;
+	height:100%;
+}
+	#color-sections .color-section {
+		width:12.5%;
+		float:left;
+		padding:0;
+		height:100%;
+	}
+
+/** nav - sticky triangle **/
+#down-triangle {
+	position: relative;
+	width: 35%;
+	left:32.5%;
+	z-index:1050;
+}
+#down-triangle-mobile {
+	display:none;
+	width:110%;
+	left:0;
+	position: relative;
+	z-index:1050;
+}
+
+	@media screen and (max-width: 900px) {
+		#down-triangle {
+			width: 44%;
+			left: 28%;
+		}
+		#down-triangle-mobile {
+			width: 44%;
+			left: 28%;
+		}
+	}
+	@media screen and (max-width: 770px) {
+		#down-triangle {
+			display:none;
+		}
+		#down-triangle-mobile {
+			display:block;
+		}
+	}
+	@media screen and (max-width: 600px) {
+		#down-triangle {
+			width: 70%;
+			left: 15%;
+		}
+		#down-triangle-mobile {
+			width: 70%;
+			left: 15%;
+		}
+	}
+	@media screen and (max-width: 450px) {
+		#down-triangle {
+			width: 100%;
+			left: 0;
+		}
+		#down-triangle-mobile {
+			width: 100%;
+			left: 0;
+		}
+	}
+
+/** Second panel - #about-section **/
+#about-section #about-text {
+	margin-top:200px;
+}
+	#about-section p {
+		margin-top:5px;
+		font-size:1.08em;
+		font-weight: 350;
+		line-height: 1.5em
+	}
+		#about-section .question {
+			margin-top:20px;
+			margin-bottom:0;
+			color:#462959;
+			font-size:20px;
+			font-style: normal;
+		}
+			#about-section #intro p {
+				width:60%;
+				margin:19px 20% 15px 23%;
+				font-size: 16px;
+				font-weight: 300;
+			}
+				#about-section #intro #register {
+					text-align: center
+				}
+			#about-section #middle p, #about-section #end p {
+				margin-left: -8%;
+				width:100%;
+			}
+		#side-girl {
+			margin-top: -50px;
+			padding-top: 0;
+			width: 104%;
+		}
+
+	@media screen and (min-width: 992px) {
+		#about-section #middle p {
+			width:67%;
+			margin-left:19%;
+			margin-right:14%;
+		}
+		#about-section #intro p {
+			width:100%;
+		}
+		#about-section #end p {
+			margin-left: -15%;
+			width:94%;
+		}
+		#about-section #end .last {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		#side-girl {
+			width:106%;
+		}
+	}
+	@media screen and (max-width: 766px) {
+		#about-section #intro p {
+			width:86%;
+			margin:15px 8%;
+		}
+		#about-section #middle p, #about-section #end p {
+			margin:15px 5%;
+			width:91%;
+		}
+		#side-girl {
+			width: 102.7%
+		}
+	}
+	@media screen and (max-width: 450px) {
+		#side-girl {
+			width: 104%
+		}
+	}
+
+
+/** Third panel - #schedule-section **/
+#schedule-section {
+	padding-top:110px;
+}
+	#schedule-section strong {
+		font-weight: 500;
+	}
+	#schedule-section .time {
+		font-family: 'LMP';
+		font-size:1.9em;
+		letter-spacing: 2px;
+	}
+	#schedule-section .description {
+		margin-top:1px;
+		font-size:1.3em;
+		line-height: 2em;	
+		font-weight: 300;
+	}
+	#schedule-section .short {
+		display: none;
+	}
+	#schedule-section .contact {
+		font-size:2em;
+	}
+	#schedule-section .blurb-wrapper {
+		margin:15px 0;
+		color:#462959;
+		width:100%;
+	}
+	#schedule-section .blurb {
+		margin-left:0;
+		width:100%;
+		line-height: 1.2em;
+	}
+	@media screen and (max-width: 1020px) {
+		#schedule-section .description {
+			display: none;
+		}
+		#schedule-section .short {
+			display: block;
+		}
+		#schedule-section .contact {
+			font-size: 1.5em;
+		}
+	}
+	@media screen and (max-width: 770px) {
+		#schedule-section .blurb, #schedule-section h4 {
+			text-align: center
+		}
+	}
+
+
+/** Fourth panel - #sponsors-section **/
+#sponsors-section {
+	padding:60px 5%;
+}
+	#sponsors-section .question {
+		font-size:3em;
+		text-align: center;
+		color: #462959;	
+	}
+	#sponsors-section p strong {
+		text-align:center !important;
+	}
+	#sponsors-section p {
+		width:100%;
+		text-align:center !important;
+	}
+	#sponsors-section .copper img {
+		padding-top:165px;
+	}
+	#sponsors-section .copper .ph {
+		padding-top:0;
+	}
+	@media screen and (max-width: 770px) {
+		#sponsors-section p strong {
+			font-size: 1.9em
+		}
+		#sponsors-section .copper {
+			display: none
+		}
+	}	

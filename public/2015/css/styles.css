@@ -1,0 +1,528 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Open Sans', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	width: 100%;
+}
+
+html, body {
+	height:100%;
+	width: 100%;
+}
+
+@font-face {
+    font-family: 'LMP';
+    src: url('littlemisspriss-webfont.eot');
+    src: url('littlemisspriss-webfont.eot?#iefix') format('embedded-opentype'),
+         url('littlemisspriss-webfont.woff2') format('woff2'),
+         url('littlemisspriss-webfont.woff') format('woff'),
+         url('littlemisspriss-webfont.ttf') format('truetype'),
+         url('littlemisspriss-webfont.svg#littlemissprissmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+#menu-wrapper {
+	height:80px;
+	background-color:#462959;
+	width:100%;
+	position:fixed;
+}
+.menu {
+	width:40%;
+	position: fixed;
+	z-index:100;
+	top:0;
+	font-size: 48px;
+	color: #fff;
+}
+	.menu p {
+		width:20%;
+		margin:15px 7%;
+		font-family: 'LMP';
+		letter-spacing: 2px;
+	}
+	#left {
+		left:1%;
+	}
+		#left p {
+			float:left;
+		}
+	#right {
+		right:2%;
+		text-align: right;
+	}
+		#right p {
+			float:right;
+		}
+		#right p:last-child {
+			margin-right: 15%;
+		}
+
+#girl {
+	position:absolute;
+	z-index:1;
+	left:0;
+	top:0;
+	width:36%;
+	padding:10px 32%;
+	background-color: #462959;
+}
+#girl-svg {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+	vertical-align: middle;
+	overflow: hidden;
+}
+.svg-content {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+	h2 {
+		text-align: center;
+		color:#fff;
+		font-family: 'LMP';
+		letter-spacing: 2px;
+		font-size: 36px;
+		width:100%;
+		margin-top:7px;
+		line-height:1em;
+		
+	}
+	#girl .tagline {
+		font-size: 24px;
+		margin-top:3px;
+	}
+	#girl .down-carrot {
+		margin:10px 45%;
+		margin-bottom:0;
+		padding-bottom:0;
+	}
+#down-triangle {
+	display: inline-block;
+	position: relative;
+	width: 35%;
+	padding-bottom: 100%;
+	vertical-align: middle;
+	overflow: hidden;
+	left:32.5%;
+	z-index:50;
+}
+#down-triangle-mobile {
+	display:none;
+	width:110%;
+	left:0;
+	position: relative;
+	padding-bottom: 100%;
+	vertical-align: middle;
+	overflow: hidden;
+	z-index:50;
+}
+
+
+#color-sections {
+	width:100%;
+	position:absolute;
+	z-index:50;
+	left:0;
+	top:0;
+	height:100%;
+}
+	#color-sections .color-section {
+		width:12.5%;
+		float:left;
+		padding:50px 0;
+		height:100%;
+	}
+#about-section, #schedule-section, #sponsors-section {
+	width:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	padding:120px 0 50px 0;
+}
+	#about-section #intro {
+		margin-left:5%;
+		padding-top:27px;
+		font-size: 15px;
+		font-weight: 300
+	}
+		#about-section #intro strong, #about-section #end strong, #schedule-section h4 strong, #sponsors-section strong {
+			font-size:50px;
+			font-family: 'LMP';
+			color:#a27994;
+			letter-spacing: 2px;
+			line-height:1.4em;
+		}
+	#about-section p {
+		float:left;
+		width:24.5%;
+		margin:60px 4%;
+		font-size:14px;
+		font-weight: 350
+	}
+		#about-section p em {
+			color:#462959;
+			font-size:20px;
+		}
+	
+	#about-section #middle {
+		width:32%;
+		margin:60px 1%;
+	}
+	#about-section #side-girl {
+		width:330px;
+		position:absolute;
+		right:0;
+		bottom: 0;
+	}
+
+a {
+	font-family: inherit;
+	text-decoration: none;
+	color:inherit;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+	#schedule-section .left, #schedule-section .right {
+		float:left;
+		width:37%;
+		margin:30px 5% 0 8%;
+		height:90%;
+	}
+	#schedule-section h4, #sponsors-section h4 em {
+		margin-left:14%;
+		font-family: 'LMP';
+		font-size: 48px;
+		letter-spacing: 2px
+	}
+		#schedule-section h4 em{
+			font-family: inherit;
+			font-weight: normal;
+			color:#462959;
+		}
+	#schedule-section div {
+		width:100%;
+		height:25px;
+	}
+	#schedule-section p {
+		font-size:18px;
+		font-weight:300;
+	}
+	#schedule-section .time {
+		float: left;
+		font-family: 'LMP';
+		font-size:24px;
+		letter-spacing: 1.5px;
+		width:100px;
+	}
+	#schedule-section .description {
+		margin-top:8px;
+		font-size:16px;
+		line-height: 1.8em;	
+	}
+	#schedule-section .short {
+		display: none;
+	}
+		#schedule-section h4:last-child{
+			margin-top:30px;
+			margin-left:0;
+		}
+		#schedule-section h4 strong {
+			font-size:30px;
+			line-height: 1em;
+		}
+		#schedule-section .blurb {
+			margin:20px 0;
+			margin-left:70px;
+			width:100%;
+		}
+#sponsors-section {
+	padding-top: 100px;
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
+}
+	#sponsors-section h4, #sponsors-section p, #sponsors-section h4 em {
+		text-align: center;
+		width:100%;
+		margin:0;
+	}
+		#sponsors-section p strong {
+			font-size: 30px
+		}
+
+	#sponsors-section .platinum {
+		width:30%;
+		margin:0 7% 0 12.5%;
+	}
+		#sponsors-section .platinum:nth-of-type(even) {
+			margin:0 12.5% 0 7%;
+		}
+	#sponsors-section .gold {
+		width:22%;
+		margin:0 13.5%;
+	}
+
+	#sponsors-section .silver {
+		width:23%;
+		margin:0 13.5%;
+	}
+
+	#sponsors-section .copper {
+		width:15%;
+		margin:0 2% 0 2%;
+		padding:100px 0;
+	}
+	#sponsors-section .ph {
+		padding:50px 0;
+	}
+	#sponsors-section img {
+		padding-top:20px;
+	}
+.wrapper {
+	float:left;
+	width:40%;
+	margin:130px 3%;
+}
+.articles, .events {
+	width:24%;
+}
+.youtube {
+	margin:150px 0;
+}
+.wrapper h2 {
+	color:#a27994;
+	font-size:50px;
+	text-align: left
+}
+.wrapper a {
+	text-decoration: underline;
+}
+.wrapper a:hover {
+	color:#a27994;
+}
+.wrapper a:visited {
+	color:#626262;
+}
+.wrapper p {
+	padding-top:18px;
+}
+.articles h2 {
+	margin-left:30px;
+}
+.articles h5 {
+	font-family: 'LMP';
+	font-size: 34px;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-top:20px;
+	color:#a27994;
+}
+.youtube h2:first-child {
+	color:#462959;
+	font-size:40px;
+	padding-bottom:10px;
+}
+.youtube h2:nth-of-type(3), .events h2:nth-of-type(2) {
+	margin-top:30px;
+}
+.youtube p {
+	padding-top:5px;
+}
+.youtube h2, .youtube p {
+	margin-left:30px;
+}
+.youtube .org {
+	float:left;
+	width:44%;
+	margin:10px 3%;
+}
+.events img, .youtube .org img {
+	width:100%;
+}
+
+
+@media screen and (max-height: 600px) {
+	#girl-svg {
+		width:60%;
+		margin-left:20%;
+		margin-right:20%;
+		padding-bottom: 60%
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	#girl-svg {
+		width:60%;
+		margin-left:20%;
+		margin-right:20%;
+		padding-bottom: 60%
+	}
+	#about-section {
+		padding-top:200px;
+	}
+}
+
+/* styles for small desktop / tablet */
+@media screen and (max-width: 1100px) {
+	.menu {
+		font-size: 40px;
+	}
+	.menu p {
+		margin:15px 8%;
+	}
+	#girl {
+		width:40%;
+		padding:10px 30%;
+	}
+	#about-section, #schedule-section, #sponsors-section {
+		padding:90px 0 80px 0;
+	}
+	
+}
+@media screen and (max-width: 950px) {
+	.menu {
+		font-size: 36px;
+	}
+	.menu p {
+		margin:15px 12%;
+	}
+	#left {
+		left:-1%;
+	}
+	#girl {
+		width:48%;
+		padding:10px 26%;
+	}
+	#side-girl {
+		display: none;
+	}
+	
+	#about-section #middle {
+		width:50%;
+		margin:60px 1%;
+		margin-bottom:10px;
+		padding-bottom:10px;
+	}
+	#about-section p {
+		width:29%;
+		margin:60px 6%;
+	}
+	#about-section #end {
+		width:50%;
+		float:none;
+		margin-left:41%;
+		margin-top:0px;
+		padding-top:0px;
+	}
+	#about-section #intro #register-1 {
+		font-size: 40px
+	}
+	#schedule-section .description {
+		display: none;
+	}
+	#schedule-section .short {
+		display: inline;
+	}
+	#schedule-section h4 strong {
+		font-size:22px;
+	}
+	#schedule-section .blurb {
+		font-size: 18px;
+		margin-left:30px;
+	}
+
+}
+
+
+/* styles for mobile */
+@media screen and (max-width: 700px) {
+	.menu {
+		display: none;
+	}
+	#girl {
+		width:110%;
+		padding-left:0;
+		padding-right:0;
+	}
+	#girl-svg {
+		width:80%;
+		margin:30px 10%;
+		padding-bottom:80%;
+	}
+	#girl h2, #girl .tagline {
+	}
+	#down-triangle {
+		display: none;
+	}
+	#down-triangle-mobile {
+		display:inline-block;
+	}
+	#about-section p {
+		float:none;
+		width:84%;
+		margin:20px 8% !important;
+	}
+	#about-section #intro {
+		margin-top:60px
+	}
+	#about-section #middle, #about-section #end {
+		width:84%;
+		margin:20px 8% !important;
+	}
+	#register-1 {
+		display:none;
+	}
+}
+
+#girl, #about-section, #color-section, #schedule-section {
+	height:100%;
+}
+
+
