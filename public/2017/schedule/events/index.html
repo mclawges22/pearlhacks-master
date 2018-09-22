@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Pearl Hacks - Events information" />
+	<meta property="og:site_name" content="Pearl Hacks 2017" />
+  <meta property="og:url" content="http://pearlhacks.com/schedule/events" />
+	<meta property="og:description" content="Pearl Hacks events information." />
+	<meta property="og:updated_time" content="1439328118" />
+	<link rel="icon" href="../../ariel.png" type="image/x-icon" />
+	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+	<title>Events for Pearl Hacks</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<link rel="icon" href="../../images/ariel.png" type="image/png">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	<!--Import bootstrap.css-->
+	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="../../css/material-fullpalette.min.css" />
+	<!--Import Pearl Hacks overrides-->
+	<link type="text/css" rel="stylesheet" href="../../css/pearlhacks.css" />
+	<link type="text/css" rel="stylesheet" href="../../css/home.css" />
+	<style>
+		p{
+			font-size: 15px;
+			letter-spacing: 1px;
+		}
+
+		.parking a{
+		  color: #CE4E6D;
+		  font-family: 'Didact Gothic';
+		  font-size: 16px;
+		  font-weight: bold;
+		}
+
+		.parking a:hover{
+		  text-shadow: 1px 1px black;
+		  text-decoration: none;
+		}
+
+		.carpool li, .buspool li{
+		  font-family: 'Didact Gothic';
+		  font-size: inherit;
+		}
+
+	</style>
+</head>
+
+<body>
+		<nav class="navbar navbar-default pearlhacks-navbar navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="../../index.html">Pearl Hacks <span class="sr-only">(current)</span></a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li>
+            			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							About <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="../../about/travel/index.html">Travel</a></li>
+							<li><a href="../../about/rules/index.html">Guidelines</a></li>
+							<li><a href="../../about/maps/index.html">Maps</a></li>
+							<li><a href="../../about/prizes/index.html">Prizes</a></li>
+						</ul>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								Register<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+							<li><a href="../../apply/participant.html" target="_blank">Participant</a></li>
+							<li><a href="../../apply/volunteer.html" target="_blank">Volunteer</a></li>
+							<li><a href="../../apply/mentor.html" target="_blank">Mentor</a></li>
+						</ul>
+						</li>
+						<li>
+							<a href="../../learn/index.html">Learn</a>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Schedule <span class="caret"></span>
+						</a>
+							<ul class="dropdown-menu">
+							<li><a href="">Events</a></li>
+							<li><a href="../workshops/index.html">Workshops</a></li>
+							<li><a href="../techtalks/index.html">Tech Talks</a></li>
+						</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More... <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="mailto:hello@pearlhacks.com">Contact us</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li>
+									<a href="http://mlh.io">Major League Hacking</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	<script type="text/javascript" src="../../js/navbar-offset.js"></script>
+	<div class="jumbotron">
+		<div class="container">
+			<h2>
+			<strong>
+				Schedule for the weekend
+			</strong>
+		</h2>
+			<p>Here are the awesome things we have planned for April 2 - 3, 2016</p>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="panel panel-primary pearlhacks-panel">
+					<div class="panel-heading">
+						<h3>Saturday, April 2nd</h3>
+					</div>
+					<table class="table table-striped table-hover panel-body">
+						<thead>
+							<tr>
+								<th>Start</th>
+								<th>End</th>
+								<th>Venue</th>
+								<th>Event</th>
+							</tr>
+						</thead>
+						<tbody id="sattable"></tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="panel panel-primary pearlhacks-panel">
+					<div class="panel-heading">
+						<h3>Sunday, April 3rd</h3>
+					</div>
+					<table class="table table-striped table-hover panel-body">
+						<thead>
+							<tr>
+								<th>Start</th>
+								<th>End</th>
+								<th>Venue</th>
+								<th>Event</th>
+							</tr>
+						</thead>
+						<tbody id="sntable"></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		try {
+			var pageTracker = _gat._getTracker("UA-61641591-1");
+			pageTracker._trackPageview();
+		} catch (err) {}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+@import url('http://fonts.googleapis.com/css?family=Didact+Gothic');
+
+
+/* Typography */
+p {
+  font-size: 25px;
+}
+
+li, .navbar-brand{
+   font-family: 'LMP';
+   font-size: 28px;
+ }
+
+/*WARNING: HTMLPREVIEW WILL NOT SHOW THE DIDACT GOTHIC FONT AND THE LMP FONT WILL LOOK TINY BUT DON"T WORRY ABOUT IT*/
+nav, p, h1, h2, h3, h4, h5, span, div {
+  font-family: 'Didact Gothic', 'LMP', sans-serif;
+  letter-spacing: .1em;
+}
+
+/* Images and color */
+body .jumbotron {
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+  background: #02030A;
+  color:white;
+}
+
+/*this is the navigation bar color and text color*/
+.navbar.pearlhacks-navbar, .panel.pearlhacks-navbar > .panel-heading {
+  background: #02030A; /*until js is fixed to allow for color change*/
+  color: white;
+}
+
+.navbar.pearlhacks-navbar.affix-top, .panel.pearlhacks-navbar.affix-top > .panel-heading {
+  background:transparent;
+}
+
+
+.panel.pearlhacks-panel > .panel-heading {
+  background-color: pink;
+  color: white;
+}
+
+.panel-heading{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.panel{
+  border-radius: 10px;
+}
+
+.panel-body{
+  height: auto;
+}
+
+.navbar .navbar-collapse ul li a:hover, .navbar .navbar-collapse ul li a:active {
+  text-decoration: none;
+  text-shadow: 3px 3px 12px #F2BB60;
+  font-size:105%;
+  font-weight:600;
+  color: inherit;
+}
+.row {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.row:first-child {
+  padding-top: 8px;
+}
+
+.row:last-child {
+  padding-bottom: 8px;
+}
+
+/* Layout */
+
+.pearlhacks-footer {
+  padding-right: 5%;
+}
+
+.pearlhacks-footer span {
+  font-size: 1.5rem;
+}
+
+.panel{
+  height: auto;
+  overflow: auto;
+}
+
+
+.jumbotron p{
+  font-size: 1em;
+}
+
+ul.dropdown-menu{
+  background: #02030A;
+}
+
+ul.dropdown-menu a{
+  color:white;
+}
+
+ul.dropdown-menu a:hover{
+  color:white;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.welcome p, .welcome li, .welcome table{
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.welcome, .welcome p{
+  margin-bottom:40px;
+}
+
+.welcome p{
+  padding-right:20px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,1);
+}
+
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}

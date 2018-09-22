@@ -1,0 +1,116 @@
+{ "events" : [
+		{"starttime" : "8:00 AM", 
+		"endtime" : "10:00 AM",
+		"day" : "Saturday",
+		"title": "Registration",
+    "room": ""},
+	
+	  {"starttime" : "8:00 AM", 
+		"endtime" : "",
+		"day" : "Saturday",
+		"title": "Breakfast",
+    "room": ""},
+	
+		{"starttime" : "10:00 AM", 
+		"endtime" : " 11:00 AM",
+		"day" : "Saturday",
+		"title": "Opening Ceremony",
+		"room": ""},
+		
+		{"starttime" : "11:00 AM", 
+		"endtime" : "12:00 PM",
+		"day" : "Saturday",
+		"title": "Team Forming Event",
+		"room": ""},
+		
+		{"starttime" : "11:00 AM", 
+		"endtime" : "1:00 PM",
+		"day" : "Saturday",
+		"title": "Sponsor Fair",
+		"room": ""},
+		
+		{"starttime" : "12:00 PM", 
+		"endtime" : "",
+		"day" : "Saturday",
+		"title": "Hacking begins!",
+		"room": ""},
+	
+	  {"starttime" : "12:30 PM", 
+		"endtime" : " 1:30 PM",
+		"day" : "Saturday",
+		"title": "Lunch",
+		"room": ""},
+		
+		{"starttime" : "3:30 PM", 
+		"endtime" : "4:30 PM",
+		"day" : "Saturday",
+		"title": "Snacks",
+		"room": ""},
+	
+		{"starttime" : "6:30 PM", 
+		"endtime" : "7:30 PM",
+		"day" : "Saturday",
+		"title": "Dinner",
+		"room": ""},
+		
+		{"starttime" : "12:00 AM", 
+		"endtime" : "1:00 AM",
+		"day" : "Sunday",
+		"title": "Midnight Snacks",
+		"room": ""},
+	
+		{"starttime" : "7:00 AM", 
+		"endtime" : "8:00 AM",
+		"day" : "Sunday",
+		"title": "Breakfast",
+		"room": ""},
+
+		{"starttime" : "7:00 AM", 
+		"endtime" : "11:00 AM",
+		"day" : "Sunday",
+		"title": "Workshops/Events",
+		"room": ""},
+	
+	 {"starttime" : "11:00 AM",
+	 "endtime" : "12:00 PM",
+	 "day" : "Sunday",
+	 "title" : "How to Demo Workshop",
+	 "room" : ""},
+	
+		{"starttime" : "12:00 PM", 
+		"endtime" : "1:00 PM",
+		"day" : "Sunday",
+		"title": "Lunch",
+		"room": ""},
+		
+		{"starttime" : "12:00 PM", 
+		"endtime" : "1:00 PM",
+		"day" : "Sunday",
+		"title": "Submit Projects!",
+		"room": ""},
+		
+		{"starttime" : "12:30 PM", 
+		"endtime" : "2:30 PM",
+		"day" : "Sunday",
+		"title": "Demo Fair",
+		"room": ""},
+		
+		{"starttime" : "3:00 PM", 
+		"endtime" : "4:00 PM",
+		"day" : "Sunday",
+		"title": "Closing Ceremony",
+		"room": ""},
+		
+		{"starttime" : "4:00 PM", 
+		"endtime" : "",
+		"day" : "Sunday",
+		"title": "Pack Up",
+		"room": ""},
+		
+		{"starttime" : "4:30 PM", 
+		"endtime" : "",
+		"day" : "Sunday",
+		"title": "Buses leave, shuttles to the airport",
+		"room": ""}
+	]
+}

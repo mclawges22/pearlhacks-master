@@ -1,0 +1,368 @@
+/*@fontimport url('http://fonts.googleapis.com/css?family=Fira+Sans:300');*/
+@import url('http://fonts.googleapis.com/css?family=Didact+Gothic');
+
+/* Little Miss Priss font import */
+@font-face {
+    font-family: 'LMP';
+    src: url('littlemisspriss-webfont.eot');
+    src: url('littlemisspriss-webfont.eot?#iefix') format('embedded-opentype'),
+         url('littlemisspriss-webfont.woff2') format('woff2'),
+         url('littlemisspriss-webfont.woff') format('woff'),
+         url('littlemisspriss-webfont.ttf') format('truetype'),
+         url('littlemisspriss-webfont.svg#littlemissprissmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('fira-sans.ultralight.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'LMP', sans-serif;
+  font-size: 18px;
+  background: black;;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'LMP', sans-serif;
+  letter-spacing: 2px;
+}
+
+strong {
+    font-size: 1.7em;
+    font-family: 'LMP', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 1em;
+}
+
+header {
+  height: auto;
+  max-height: 1072px;
+  min-height: 450px;
+  width: 100%;
+}
+header.full-height > .jumbotron {
+  height: inherit;
+  max-height: inherit;
+  min-height: inherit;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background:transparent;
+}
+
+/*.tintOverlay {
+  position: absolute;
+  content:" ";
+  opacity: 0;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: block;
+  z-index:0;
+  background-color: rgb(165, 89, 89);
+}
+*/
+
+#frontPage {
+  background: url("../images/beach.jpg");
+  background-size: 100% 100%;
+  filter:saturate(100%);
+  margin-top: -60px;
+  margin-bottom:60px;
+  box-shadow: none;
+}
+
+#frontPage .jumbotron {
+  box-shadow: none;
+}
+
+#pearlHacks{
+  color: white;
+  letter-spacing: 2px;
+  position: absolute;;
+  z-index: 4;
+  top: 20%;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+#pearlHacks p {
+  font-family: 'LMP';
+}
+
+#pearlHacks a{
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.9em;
+  line-height: 0;
+}
+
+#pearlHacks a:hover{
+  text-decoration: none;
+  text-shadow: 3px 3px 12px #F2BB60;
+  color: inherit;
+  font-weight: bold;
+}
+
+img#ariel{
+  height: auto;
+  max-width: 500px;
+  width: 50%;
+  margin: auto;
+  z-index: 5;
+  padding-top:10%;
+  display: block;
+}
+
+  @media screen and (max-width: 500px) {
+   .ariel{
+     background-size: 150px 154px;
+     height: 154px;
+     width: 150px;
+     z-index: 5;
+   }
+  }
+
+#invitation {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 1.7em;
+    font-family: 'LMP';
+    border: solid #CE4E6D 7px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px #C75773;
+}
+
+div#content.container
+{
+  margin-top: 0px;
+}
+
+#invitation p
+{
+  margin: 0 0 2px;
+}
+
+#invitation .big {
+  font-size: 2rem;
+}
+
+#invitation .btn{
+  background-color: #CE4E6D;
+}
+
+#invitation .col-xs-8, #invitation .col-xs-offset-2 {
+  float: none;
+}
+
+#invitation img:first-child {
+  margin-bottom: -10%;
+}
+
+#invitation img {
+  width: 80%;
+  margin: auto;
+}
+
+#invitation img:last-child {
+  margin-top: -15%;
+}
+
+#invitation .content {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.jumbotron {
+  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.25);
+  z-index: 10;
+}
+
+.mid h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 15rem;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.participant img
+{
+  filter: contrast(1);
+  -webkit-filter: contrast(1);
+  -moz-filter: contrast(1);
+  -o-filter: contrast(1);
+  -ms-filter: contrast(1);
+}
+
+.participant img:hover
+{
+  filter: contrast(0.3);
+  -webkit-filter: opacity(30%);
+  -moz-filter: contrast(0.3);
+  -o-filter: contrast(0.3);
+  -ms-filter: contrast(0.3);
+  opacity: 1;
+}
+
+#partipant-text
+{
+  font-family:Helvetica;
+  font-weight:900;
+  color:rgba(255,255,255,.85);
+  font-size:40px;
+}
+
+
+#nav.affix-top {
+  z-index: 666;
+}
+#nav.affix {
+  top: 0;
+  border-width: 0 0 1px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 667;
+}
+
+ p {
+  font-size: 1.1em;
+  letter-spacing: 3px;
+}
+
+.panel-body{
+  font-size: 1.4rem;
+}
+
+#faq h2{
+  font-weight: bold;
+  font-size: 1.9em;
+  color: #ce4e6d;
+}
+
+.pearlhacks-panel.FAQ_bubble {
+  width:100%;
+  max-width:350px;
+  border-radius:50%;
+  margin:auto;
+  margin-bottom: 20px
+}
+
+.FAQ_bubble {
+  padding: 32px
+  margin:auto;
+  margin-bottom:20px;
+}
+
+.FAQ_bubble_click {
+  display:none;
+}
+
+.FAQ_bubble .FAQ_hover_text {
+  padding:0px;
+}
+
+.FAQ_text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ .FAQ_hover_text {
+  color: white;
+  font-size: 1.2rem;
+}
+
+
+.leftHeader{
+  width:100%;
+  min-height:80px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top:1px;
+}
+
+@media (min-width: 700px) {
+  .leftHeader{
+    width: 700px;
+    margin-left: -40px;
+  }
+  .col-sm-6 .leftHeader, .col-md-6 .leftHeader{
+    width:450px;
+  }
+  .col-md-6 .leftHeader.purple{
+    height:160px;
+  }
+}
+
+
+
+.welcome a {
+  color: #81CFD3;
+}
+
+.teal {
+  background-color: #81CFD3;
+}
+
+.purple {
+  background: #A28AC0;
+}
+
+.purple~ul a  {
+  color: #A28AC0;
+}
+
+.pink {
+  background: #DB8385;
+}
+
+.pink~ul a {
+  color: #DB8385;
+}
+
+.footerHome {
+  width: 100%;
+  height:400px;
+  margin-bottom: -22px;
+}
+
+.btn-white.emailButton {
+  font-size: 36px;
+  font-weight:lighter;
+}
+
+#footerHomeContent {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.centerText {
+  text-align: center;
+}
+.btn.btn-white.teal {
+  font-size: 24px;
+  font-weight:lighter;
+  background-color: #81CFD3;
+  border-radius: 6px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,900);
