@@ -2,6 +2,7 @@
     font-family: "Caviar Dreams";
     src: url("font/caviar-dreams/caviar-dreams.ttf");
 }
+
 @font-face {
     font-family: "Caviar Dreams";
     src: url("font/caviar-dreams/caviar-dreams-bold.ttf");
@@ -13,17 +14,39 @@ h1,h2{
 	font-family: 'Caviar Dreams';
 	text-transform: uppercase;
 }
+
 body{
 	margin:0;
 }
+
+[type=reset], [type=submit], button, html [type=button]{
+	border-color: black;
+    background: none;
+    border-radius: 50px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right:20px;
+}
+
+button:focus{
+	outline:none;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+
 .background{
 	background-color: #FBD9E8;
-/*	height: 100vh;*/
+	height: 100vh;
 	text-align: center;
 }
+
 .background img{
 	width:40%;
 }
+
 .background h1{
 	text-transform: uppercase;
 	font-size: 3em;
@@ -31,45 +54,71 @@ body{
 	margin:0;
 	font-weight: bold;
 }
+
 .background h2{
 	font-weight: initial;
-	font-size: 1.6em;
+	font-size: 1.4em;
 	margin:0;
 	color:black;
 }
+
 .background i{
 	color:white;
-	font-size: 40px;
+	font-size: 30px;
 	margin-top: 20px;
-	width:80px;
+	width: 80px;
 	display: inline-block;
 }
+
 .background i:hover{
 	color:#F16985;
 }
+
 .center{
 	display: flex;
   	flex-direction: column;
   	justify-content: center;
   	align-items: center;
   	text-align: center;
-  	min-height: 100vh;
+  	min-height: 90vh;
 }
+
 .background li{
 	display: inline;
 }
+
 .background ul{
 	margin:0;
 	padding:0;
+/*	margin-top:5%;*/
 }
+
 .dot{
 	display: inline;
+}
+
+.email_signup{
+	margin-top: 3%;
+}
+
+.email_signup h2{
+	display: inline-block;
+}
+
+.email_signup i{
+	display: inline-block;
+	margin-top: 0px;
+	width: initial;
+	color: black;
+	font-weight: 10px;
+	margin-right: 20px;
 }
 
 @media only screen and (max-width: 1076px) {
     .background h1{
     	font-size: 2.5em;
     }
+
     .background img{
     	width: 50%;
     }
@@ -83,16 +132,20 @@ body{
 	.background img{
 		width: 80%;
 	}
+
 	.background h1{
 		font-size: 3em;
 	}
+
 	.background h2{
 		font-size: 1.3em;
 	}
+
 	.background i {
 		font-size: 30px;
 		width: 60px;
 	}
+
 	.dot{
 		display: none;
 	}
