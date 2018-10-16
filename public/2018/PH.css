@@ -1,0 +1,329 @@
+@charset "utf-8";
+
+
+body{
+    background-color: #4C4C4C;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.main{
+    margin:auto;
+    display:inline-block;
+    width:100%;
+    position:relative;
+    text-align:center;  
+}
+
+.content{
+    position:absolute;
+    bottom:5%;
+    right:20%;
+    background: rgba(255,255,255,0.7);
+    width:60%;
+    text-align: center;
+}
+
+.about{
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 20px;
+    margin-bottom:20px;
+    margin-right:20px;
+    margin-left:20px;
+}
+
+.date{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-right: -20px;
+    margin-left: -20px;
+    
+}
+
+.footer {
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:300;
+    font-size:17px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #7F7F7F;
+    color: white;
+    text-align: center;
+    height: auto;
+    line-height: 25px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+.crown1{
+    margin-top:75px;
+}
+
+.crown2{
+    margin-top:75px;
+    margin-bottom: 200px;
+}
+
+a:hover{
+    color:#c67baf;
+}
+
+a{
+    color:#c67baf;
+}
+
+
+.content h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:300;
+    font-size: 60px;
+    color:#4C4C4C;
+    text-align: center;
+}
+
+p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:300;
+    font-size:20px;
+    color:#4C4C4C;
+}
+
+.navtext{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:300;
+    font-size:15px;
+    color:#8C8C8C;
+    padding-top:22px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.logo{
+    margin-left:30px;
+    margin-right: 20px;
+}
+
+.dropdown-menu{
+   background: rgb(38,44,50);
+   color:#8C8C8C;
+   font-family: 'Josefin Sans', sans-serif;
+    font-weight:300;
+    font-size:15px;
+}
+
+.dropdown-item{
+    color:#8C8C8C;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:300;
+    font-size:15px;
+}
+
+.guide {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.title {
+  position: relative;
+  width: 100%;
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.guide:hover .overlay {
+    display:block;
+  bottom: 0;
+  height: 100%;
+    overflow:auto;
+    text-align: center;
+    margin: auto;
+}
+
+.overlay-text {
+  white-space: normal;
+  color: #4c4c4c;
+  font-family: 'Josefin Sans', sans-serif;
+    font-weight:300;
+    font-size:20px;
+  position: absolute;
+  overflow:auto;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width:95%;
+  height: 90%;
+  display: block;
+}
+
+.prizes{
+    position: relative;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+.card-header{
+    background: rgb(53,53,53);
+    border-radius: 0px;
+    border-color: rgb(53,53,53);
+}
+
+h5{
+   font-family: 'Josefin Sans', sans-serif;
+    font-weight:700;
+    font-size:30px;
+    padding-top: 10px;
+}
+
+
+.card-block{
+    background: rgb(53,53,53);
+    border-radius: 0px;
+    border-color: rgb(53,53,53);
+     font-family: 'Josefin Sans', sans-serif;
+    font-weight:300;
+    font-size:20px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card{
+    border-radius: 0px;
+    border-color: rgb(91,91,91);
+}
+
+
+.modal-content{
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    border: 15px solid #000;
+}
+
+.end{
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.travel{
+    align-items:center;
+    text-align:center;
+    padding-top: 30px;
+}
+
+.travel2{
+    align-items:center;
+    text-align:justify;
+    text-justify: inter-word;
+    padding-top: 30px;
+}
+
+.travel-head{
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+
+h2{
+   font-family: 'Josefin Sans', sans-serif;
+    font-weight:300;
+    font-size:35px;
+    color:#f4f4f4;
+}
+
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:300;
+    font-size:35px;
+    color:#d8c05c;
+    margin-bottom:20px;
+}
+
+h4{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:700;
+    font-size:35px;
+    color:#898989;
+    margin-bottom: -20px;
+}
+
+h6{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:300;
+    font-size:25px;
+    color:#898989;
+}
+
+h5{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:700;
+    font-size:25px;
+    color:#898989;
+}
+
+.form-group{
+    color:#ffffff;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:300;
+    font-size:17px;
+    
+}
+
+.btn{
+    background-color: #be97be;
+    color:#ffffff;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:300;
+    font-size:17px;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #a878a8;
+    color:#ffffff;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:300;
+    font-size:17px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
