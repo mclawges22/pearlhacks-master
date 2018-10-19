@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("font/caviar-dreams/caviar-dreams.ttf");
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("font/caviar-dreams/caviar-dreams-bold.ttf");
+    font-weight: bold;
+}
+
+@font-face{
+	font-family:"Geo Sans Light";
+	src: url("font/geo-sans-light/geo-sans-light.ttf");
+}
+
+@font-face{
+	font-family:"Geo Sans Light";
+	src: url("font/geo-sans-light/geo-sans-light-oblique.ttf");
+	font-style: oblique;
+}
+
+:root {
+    --main-black: #323232;
+    --main-white: #ffffff;
+    --main-light-pink: #FBD9E8; 
+    --main-dark-pink: #F16985; 
+}
+
+
+/*******Global********/
+h1{
+	font-family: 'Caviar Dreams';
+	font-size: 60px;
+	font-weight: 600;
+}
+
+h3{
+	font-family: 'Geo Sans Light';
+	font-size: 30px;
+	color: var(--main-black);
+	line-height: 1;
+}
+
+a{
+	font-family: 'Caviar Dreams';
+}
+
+/******Navbar********/
+.navbar-expand-lg .navbar-nav{
+	margin: auto;
+	/*text-transform: uppercase;*/
+}
+
+.navbar-light .navbar-nav .nav-link{
+	color: var(--main-black);
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-left: 5px;
+    margin-right: 5px;
+}
+
+.navbar-light .navbar-nav .nav-logo .nav-link{
+	text-transform: initial;
+}
+
+.navbar-expand-lg{
+	height: 80px;
+}
+
+/*****Home Page******/
+.home-bg{
+	background-color: #FBD9E8;
+	color: white;
+	/*align-items: center;*/
+}
+
+.home-bg .row{
+	margin: auto;
+}
+
+.home-bg img{
+	width: 100%;
+}
+
+/*.home-bg .text{
+	align-items: center;
+}*/
