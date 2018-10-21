@@ -41,6 +41,7 @@ h2{
 	font-size: 40px;
 	text-transform: uppercase;
 	text-align: center;
+	margin-bottom: 0px;
 }
 
 h3{
@@ -51,9 +52,22 @@ h3{
 }
 
 h4{
+	font-family: 'Caviar Dreams';
+	font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+h5{
 	font-family: 'Geo Sans Light';
 	font-size: 25px;
 	line-height: 1.4;
+	margin: auto;
+}
+
+h6{
+	font-family: 'Geo Sans Light';
+	font-size: 20px;
 }
 
 a{
@@ -61,14 +75,21 @@ a{
 }
 
 .float{
-    box-shadow: 1px 2px 3px #000000;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 	margin: auto;
 	padding-top: 5%;
 	padding-bottom: 5%;
+	top: -50px;
+	margin: auto;
 }
 
 .subtitle{
 	color: var(--main-white);
+}
+
+.subtitle h2{
+	padding-top: 80px;
+	padding-bottom: 130px;
 }
 
 /******Navbar********/
@@ -153,7 +174,7 @@ a{
 	margin-bottom: 50px;
 }
 
-.intro h4{
+.intro h5{
 	margin: auto;
 }
 
@@ -165,4 +186,78 @@ a{
     top: -150px;
     z-index: -1;
 }
+
+.sponsors .subtitle h2{
+	padding-top:0px;
+}
+
+
+/*****Travel Page******/
+.travel{
+	background-color: var(--main-black);
+}
+
+.bus{
+	background-color: var(--main-dark-pink);
+	color: var(--main-white);
+}
+
+.bus .bus_table{
+	background-color: rgba(50,50,50,0.7);
+	margin: auto;
+	text-align: center;
+	padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    border: 1.5px solid var(--main-dark-pink);
+}
+
+.bus .bus_route{
+	/*background-color: rgba(50,50,50,0.7);*/
+	padding: 0px;
+	display: flex;
+    margin: auto;
+    /*margin-top: 3px;*/
+}
+
+.route_item h6{
+	text-indent: 30px
+}
+
+.route_item{
+	background-color: rgba(50,50,50,0.7);
+	padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1.5px solid var(--main-dark-pink);
+}
+
+.car{
+	background-color: var(--main-black);
+	color: white;
+}
+
+.car .text{
+	margin: auto;
+}
+
+.car.float{
+	margin-top: -50px;
+}
+
+.car_reimb{
+	margin: auto;
+}
+.car_item{
+	background-color: rgba(255,255,255,0.7);
+}
+
+.plane{
+	background-color: var(--main-dark-pink);
+	color: white;
+	z-index: -1;
+}
+.plane h4{
+	margin-top: 50px;
+}
+
 
