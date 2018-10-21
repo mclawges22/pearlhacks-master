@@ -35,6 +35,14 @@ h1{
 	font-weight: 600;
 }
 
+h2{
+	font-family: 'Caviar Dreams';
+	font-weight: 600;
+	font-size: 40px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
 h3{
 	font-family: 'Geo Sans Light';
 	font-size: 30px;
@@ -42,8 +50,25 @@ h3{
 	line-height: 1;
 }
 
+h4{
+	font-family: 'Geo Sans Light';
+	font-size: 25px;
+	line-height: 1.4;
+}
+
 a{
 	font-family: 'Caviar Dreams';
+}
+
+.float{
+    box-shadow: 1px 2px 3px #000000;
+	margin: auto;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.subtitle{
+	color: var(--main-white);
 }
 
 /******Navbar********/
@@ -68,21 +93,76 @@ a{
 	height: 80px;
 }
 
+.dropdown-menu{
+	text-transform: uppercase;
+	color: var(--main-black);
+	border-radius: 0;
+	padding: 0 0; 
+}
+
+.dropdown-item{
+	color: var(--main-black);
+	padding-top: 8px;
+    padding-bottom: 8px;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+	background-color: var(--main-black);
+	color: var(--white);
+}
+
+.dropdown-item.active, .dropdown-item:active{
+	background-color: var(--main-black);
+	color: var(--white);
+}
+
+.navbar-brand{
+	margin-right: 0px;
+	padding-top: 0px;
+}
+
+.nav-item{
+	margin: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
 /*****Home Page******/
 .home-bg{
-	background-color: #FBD9E8;
-	color: white;
+	background-color: var(--main-light-pink);
+	color: var(--white);
 	/*align-items: center;*/
 }
 
 .home-bg .row{
 	margin: auto;
+	align-items: center;
+	height: 500px;
 }
 
 .home-bg img{
 	width: 100%;
 }
 
-/*.home-bg .text{
-	align-items: center;
-}*/
+.intro{
+	background-color: var(--main-black);
+	color: var(--white);
+	top: -55px;
+}
+
+.intro h2{
+	margin-bottom: 50px;
+}
+
+.intro h4{
+	margin: auto;
+}
+
+.sponsors .subtitle{
+	background-color: var(--main-dark-pink);
+	position: relative;
+	height: 300px;
+    padding-top: 175px;
+    top: -150px;
+    z-index: -1;
+}
+
