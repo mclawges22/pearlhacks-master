@@ -115,7 +115,6 @@ footer i:hover{
 /******Navbar********/
 .navbar-expand-lg .navbar-nav{
 	margin: auto;
-	/*text-transform: uppercase;*/
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -163,8 +162,8 @@ footer i:hover{
 
 .nav-item{
 	margin: auto;
-	margin-left: 0px;
-	margin-right: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .navbar-light .navbar-nav .nav-link.active{
@@ -174,6 +173,15 @@ footer i:hover{
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
 	color: var(--main-dark-pink);
 }
+
+.navbar-expand-lg {
+    height: auto;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover{
+	outline: none;
+}
+
 
 /*****Home Page******/
 .home-bg{
@@ -195,7 +203,7 @@ footer i:hover{
 .intro{
 	background-color: var(--main-black);
 	color: var(--white);
-	top: -55px;
+	top: -57px;
 }
 
 .intro h2{
@@ -328,7 +336,6 @@ footer i:hover{
 .card{
 	background-color: var(--main-white);
 	border: 0px;
-	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 	border-radius: 0px;
 	padding: 0px;
 }
@@ -344,6 +351,7 @@ footer i:hover{
 	padding-top: 0px;
 	background-color: var(--main-black);
 	border-bottom: 1px solid #707070;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .card-header:first-child{
@@ -373,11 +381,12 @@ footer i:hover{
 	color: white;
 	background-color: var(--main-dark-pink);
 	padding: 35px;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .guideline{
 	margin-top: 100px;
-	background-color: var(--main-black);
+	background-color: var(--main-light-pink);
 	color: white;
 	padding-top: 100px;
 }
@@ -385,31 +394,26 @@ footer i:hover{
 .block{
 	padding-top: 100px;
 	padding-bottom: 100px;
+	margin-bottom: 100px;
 }
 
 .box{
-	/*position: relative;*/
-	padding-bottom: 20px;
-	/*background-color: var(--main-dark-pink);*/
-	/*width: 100%;*/
-	padding-top: 10%; 
-	padding-bottom: 10%; 
 	margin: 20px;
-
-	  width: 300px;
-  height: 200px;
-  position: relative;
-  -webkit-perspective: 800px;
-  -ms-perspective: 800px;
-  perspective: 800px;
-  border-radius: 4px;
+	width: 300px;
+	height: 300px;
+	position: relative;
+	-webkit-perspective: 800px;
+	-ms-perspective: 800px;
+	perspective: 800px;
+	border-radius: 4px;
+	padding: 0;
 
 }
 
 .grid{
 /*	width: 100%;*/
 /*	background-color: var(--main-dark-pink);*/
-	color: var(--main-black);
+	color: var(--main-light-pink);
 	width: 100%;
 	/*padding-top: 100%; 
 	padding-bottom: : 10%; /* 1:1 Aspect Ratio */
@@ -427,8 +431,7 @@ footer i:hover{
 }
 
 .grid{
-/*position: absolute;*/
-   width: 100%;
+  width: 100%;
   height: 100%;
   position: absolute;
   -webkit-transform-style: preserve-3d;
@@ -436,18 +439,19 @@ footer i:hover{
   transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  /*border-radius: 6px;*/
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+/*  box-shadow: 0 6px 16px rgba(0,0,0,0.15);*/
+box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
+
 .grid div {
   position: absolute;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  background: var(--main-dark-pink);
-   display: -ms-flexbox;
+  background: var(--main-black);
+  display: -ms-flexbox;
   display: box;
   display: flex;
   -o-box-pack: center;
@@ -456,12 +460,19 @@ footer i:hover{
   align-items: center;
 }
 
-
 .grid .back {
-  background: var(--main-light-pink);
+  background: var(--main-dark-pink);
+  overflow: scroll;
+  padding: 20px;
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
+
+.grid .back h6{
+	/*height: inherit;*/
+/*	margin-top: 30%;*/
+}
+
 .grid.flipped {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
