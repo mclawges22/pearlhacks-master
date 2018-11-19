@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("font/caviar-dreams/caviar-dreams.ttf");
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("font/caviar-dreams/caviar-dreams-bold.ttf");
+    font-weight: bold;
+}
+
+h1,h2{
+	color:white;
+	font-family: 'Caviar Dreams';
+	text-transform: uppercase;
+}
+
+body{
+	margin:0;
+}
+
+a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+[type=reset], [type=submit], button, html [type=button]{
+	border-color: black;
+    background: none;
+    border-radius: 50px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right:20px;
+    border-width: 1px;
+}
+
+button:focus{
+	outline:none;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+
+.background{
+	background-color: #FBD9E8;
+	height: 100vh;
+	text-align: center;
+}
+
+.background img{
+	width:40%;
+	margin-bottom: 10px;
+}
+
+.background h1{
+	text-transform: uppercase;
+	font-size: 3em;
+	font-style: bold;
+	margin:0;
+	font-weight: bold;
+}
+
+.background h2{
+	font-weight: initial;
+	font-size: 1.4em;
+	margin:0;
+	color:black;
+	border-bottom:1px solid;
+	margin-top: 30px;
+	border-bottom-style: dotted;
+}
+
+.background i{
+	color:white;
+	font-size: 30px;
+	margin-top: 20px;
+	width: 80px;
+	display: inline-block;
+}
+
+.background i:hover{
+	color:#F16985;
+}
+
+.center{
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  	text-align: center;
+  	min-height: 90vh;
+}
+
+.background li{
+	display: inline;
+}
+
+.background ul{
+	margin:0;
+	padding:0;
+/*	margin-top:5%;*/
+}
+
+.dot{
+	display: inline;
+}
+
+.email_signup{
+	margin-top: 3%;
+}
+
+.email_signup h2{
+	display: inline-block;
+}
+
+.email_signup i{
+	display: inline-block;
+	margin-top: 0px;
+	width: initial;
+	color: black;
+	font-weight: 10px;
+	margin-right: 20px;
+	width: 30px;
+}
+
+@media only screen and (max-width: 1076px) {
+    .background h1{
+    	font-size: 2.5em;
+    }
+
+    .background img{
+    	width: 50%;
+    }
+}
+@media only screen and (max-width: 708px){
+	.background h1{
+		font-size: 2em;
+	}
+}
+@media only screen and (max-width: 500px){
+	.background img{
+		width: 80%;
+	}
+
+	.background h1{
+		font-size: 3em;
+	}
+
+	.background h2{
+		font-size: 1.3em;
+	}
+
+	.background i {
+		font-size: 30px;
+		width: 60px;
+	}
+
+	.dot{
+		display: none;
+	}
+
+	.email_signup i{
+		margin-right: 0px;
+		width: 30px;
+	}
+
+}
+@media only screen and (max-height: 500px){
+	.background{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
