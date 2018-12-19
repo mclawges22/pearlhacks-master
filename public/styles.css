@@ -311,6 +311,10 @@ button.register:hover{
     margin-bottom: 50px;
 }
 
+.bus h6, .car h6{
+	margin: auto;
+}
+
 .route_item h6{
 	text-indent: 30px
 }
@@ -378,7 +382,7 @@ button.register:hover{
 }
 
 .car_form{
-	margin-top: 50px;
+	padding-top: 50px;
 }
 
 .other{
