@@ -691,6 +691,10 @@ button.register:hover{
 		margin-right: 5px;
 	}
 
+	#mlh-trust-badge{
+		right: 20px !important;
+	}
+
 	.float{
 		padding-bottom: 20%;
 	}
