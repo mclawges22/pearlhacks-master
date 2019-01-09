@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "Caviar Dreams";
-    src: url("font/caviar-dreams/caviar-dreams.ttf");
+	font-family: "Caviar Dreams";
+	src: url("font/caviar-dreams/caviar-dreams.ttf");
 }
 
 @font-face {
-    font-family: "Caviar Dreams";
-    src: url("font/caviar-dreams/caviar-dreams-bold.ttf");
-    font-weight: bold;
+	font-family: "Caviar Dreams";
+	src: url("font/caviar-dreams/caviar-dreams-bold.ttf");
+	font-weight: bold;
 }
 
 @font-face{
@@ -21,10 +21,10 @@
 }
 
 :root {
-    --main-black: #323232;
-    --main-white: #ffffff;
-    --main-light-pink: #FBD9E8; 
-    --main-dark-pink: #F16985; 
+	--main-black: #323232;
+	--main-white: #ffffff;
+	--main-light-pink: #FBD9E8; 
+	--main-dark-pink: #F16985; 
 }
 
 
@@ -56,8 +56,8 @@ h3{
 h4{
 	font-family: 'Caviar Dreams';
 	font-size: 25px;
-    font-weight: 600;
-    text-align: center;
+	font-weight: 600;
+	text-align: center;
 }
 
 h5{
@@ -89,10 +89,10 @@ footer{
 footer i{
 	color: var(--main-white);
 	margin-top: 40px;
-    margin-bottom: 40px;
-    font-size: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
+	margin-bottom: 40px;
+	font-size: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
 footer i:hover{
@@ -101,7 +101,7 @@ footer i:hover{
 }
 
 .float{
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 	margin: auto;
 	padding-top: 5%;
 	padding-bottom: 5%;
@@ -131,7 +131,7 @@ footer i:hover{
 	font-size: 20px;
 	text-transform: uppercase;
 	margin-left: 5px;
-    margin-right: 5px;
+	margin-right: 5px;
 }
 
 .nav-link:active, .nav-link.active{
@@ -157,7 +157,7 @@ footer i:hover{
 .dropdown-item{
 	color: var(--main-black);
 	padding-top: 8px;
-    padding-bottom: 8px;
+	padding-bottom: 8px;
 }
 .dropdown-item:focus, .dropdown-item:hover{
 	background-color: var(--main-dark-pink);
@@ -189,7 +189,7 @@ footer i:hover{
 }
 
 .navbar-expand-lg {
-    height: auto;
+	height: auto;
 }
 
 .navbar-toggler:focus, .navbar-toggler:hover{
@@ -222,13 +222,13 @@ footer i:hover{
 
 button.register{
 	background-color: var(--main-dark-pink);
-    text-transform: uppercase;
-    border: none;
-    padding: 3% 3% 3% 3%;
-    font-size: 20px;
-    border-radius: 200px;
-    color: var(--main-white);
-    margin-top: 10px;
+	text-transform: uppercase;
+	border: none;
+	padding: 3% 3% 3% 3%;
+	font-size: 20px;
+	border-radius: 200px;
+	color: var(--main-white);
+	margin-top: 10px;
 }
 
 button.register:hover{
@@ -254,9 +254,9 @@ button.register:hover{
 	background-color: var(--main-dark-pink);
 	position: relative;
 	height: 300px;
-    padding-top: 175px;
-    top: -150px;
-    z-index: -1;
+	padding-top: 175px;
+	top: -150px;
+	z-index: -1;
 }
 
 .sponsors .subtitle h2{
@@ -299,16 +299,16 @@ button.register:hover{
 	margin: auto;
 	text-align: center;
 	padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 50px;
-    border: 1.5px solid var(--main-dark-pink);
+	padding-bottom: 20px;
+	margin-top: 50px;
+	border: 1.5px solid var(--main-dark-pink);
 }
 
 .bus .bus_route{
 	padding: 0px;
 	display: flex;
-    margin: auto;
-    margin-bottom: 50px;
+	margin: auto;
+	margin-bottom: 50px;
 }
 
 .bus h6, .car h6{
@@ -322,8 +322,8 @@ button.register:hover{
 .route_item{
 	background-color: rgba(50,50,50,0.7);
 	padding-top: 20px;
-    padding-bottom: 20px;
-    border: 1.5px solid var(--main-dark-pink);
+	padding-bottom: 20px;
+	border: 1.5px solid var(--main-dark-pink);
 }
 
 .route_item.south{
@@ -366,8 +366,8 @@ button.register:hover{
 	background-color: rgba(255,255,255,0.7);
 	border: 1.5px solid var(--main-black);
 	padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 25px;
+	padding-bottom: 15px;
+	padding-left: 25px;
 }
 
 .car_item h6{
@@ -449,9 +449,9 @@ button.register:hover{
 
 .wrapper2{
 	width: 49%;
-    float: left;
-    margin-left: 3px;
-    margin-right: 3px;
+	float: left;
+	margin-left: 3px;
+	margin-right: 3px;
 }
 
 .card-header{
@@ -523,46 +523,52 @@ button.register:hover{
 }
 
 .grid{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-  -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+	-webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
 }
 
 .grid div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  background: var(--main-black);
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -o-box-pack: center;
-  justify-content: center;
-  -o-box-align: center;
-  align-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	background: var(--main-black);
+	display: -ms-flexbox;
+	display: box;
+	display: flex;
+	 -o-box-pack: center;
+	justify-content: center;
+	-o-box-align: center;
+	align-items: center;
 }
 
 .grid .back {
-  background: var(--main-dark-pink);
-  overflow: scroll;
-  padding: 20px;
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+	background: var(--main-dark-pink);
+	overflow: scroll;
+	padding: 20px;
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 .grid.flipped {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.grid .back a{
+	text-decoration: underline;
+	color: var(--main-light-pink);
+/*	font-weight: 500;*/
 }
 
 /* ==========================================================================
@@ -629,7 +635,7 @@ button.register:hover{
 		display: none;
 	}
 
-    /****Travel****/
+	/****Travel****/
 	.car.float{
 		margin-top: 0px;
 	}
