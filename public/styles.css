@@ -184,7 +184,7 @@ footer i:hover{
 	color: var(--main-dark-pink);
 }
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:active{
 	color: var(--main-dark-pink);
 }
 
@@ -200,6 +200,29 @@ footer i:hover{
 	display: none;
 }
 
+/******Countdown********/
+.countdown { 
+	text-align: center;
+	background-color: var(--main-black);
+	color: white;
+}
+
+.countdown li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 1em;
+	padding-top: 0px;
+	text-transform: uppercase;
+}
+
+.countdown li span {
+	display: block;
+}
+
+.countdown h5{
+	padding-top: 1em;
+	padding-bottom: 20px;
+}
 
 /* ==========================================================================
    Home page styles
@@ -568,7 +591,7 @@ button.register:hover{
 .grid .back a{
 	text-decoration: underline;
 	color: var(--main-light-pink);
-/*	font-weight: 500;*/
+/*  font-weight: 500;*/
 }
 
 /* ==========================================================================
@@ -729,7 +752,7 @@ button.register:hover{
 		top: 0px;
 	}
 
-	.fixed{	/**Delete fixed class later*/
+	.fixed{ /**Delete fixed class later*/
 		bottom: 0;
 		position: fixed;
 		width: 100%;
