@@ -720,8 +720,21 @@ button.register:hover{
 		margin-right: 5px;
 	}
 
+	.countdown li{
+		padding: 0.5em;
+	}
+
+	.countdown ul{
+		padding: 0px;
+	}
+
+	.countdown h5{
+		padding-bottom: 10px;
+	}
+
 	#mlh-trust-badge{
 		right: 20px !important;
+		display: none;
 	}
 
 	.float{
@@ -732,6 +745,7 @@ button.register:hover{
 		padding-top: 50px;
 		padding-bottom: 50px;
 	}
+
 
 	/***Home Page****/
 	.sponsors .subtitle{
