@@ -204,7 +204,7 @@ footer i:hover{
 .countdown { 
 	text-align: center;
 	background-color: var(--main-black);
-	color: white;
+	color: var(--main-white);
 }
 
 .countdown li {

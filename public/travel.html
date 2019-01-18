@@ -19,6 +19,7 @@
 		});
 
 	</script>
+
 </head>
 
 <body>
@@ -174,26 +175,33 @@
 
 	<footer class="footer"></footer>
 
-<script>
+	<script>
 
-	$('.remove_later').addClass('row')
+		$('.remove_later').addClass('row')
 
-	$(function(){
+		$(function(){
 
-		if ($(window).width()<992){
-			$('.remove_later').removeClass('row')
-		}else{
-			 $('.remove_later').addClass('row')
-		}
-		$(window).bind("resize",function(){
-		    if($(this).width() <992){
-		    $('.remove_later').removeClass('row')
-		    }else{
-		    $('.remove_later').addClass('row')
-		    }
-		})
-	})
+			if ($(window).width()<992){
+				$('.remove_later').removeClass('row')
 
-</script>
+			}else{
+				 $('.remove_later').addClass('row')
+			}
+
+			$(window).bind("resize",function(){
+			    if($(this).width() <992){
+			    	$('.remove_later').removeClass('row')
+			    }else{
+			    	$('.remove_later').addClass('row')
+			    }
+			})
+
+			setTimeout(
+				function(){
+					$('.travel-link').addClass('active')
+				}, 100);
+			})
+
+	</script>
 </body>
 </html>
