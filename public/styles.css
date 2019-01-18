@@ -732,8 +732,7 @@ button.register:hover{
 		padding-bottom: 10px;
 	}
 
-	#mlh-trust-badge{
-		right: 20px !important;
+	#mlh-trust-badge img{
 		display: none;
 	}
 
