@@ -408,6 +408,25 @@ button.register:hover{
 	padding-top: 50px;
 }
 
+.car_parking{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.mapouter{
+	text-align:right;
+	height:500px;
+	width:400px;
+	display: inline-block;
+	margin: 20px;
+}
+.gmap_canvas {
+	overflow:hidden;
+	background:none!important;
+	height:500px;
+	width:400px;
+}
+
 .other{
 	background-color: var(--main-dark-pink);
 	color: white;
