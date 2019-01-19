@@ -317,6 +317,10 @@ button.register:hover{
 	color: var(--main-white);
 }
 
+.bus h4{
+	margin-top: 50px;
+}
+
 .bus .bus_table{
 	background-color: rgba(50,50,50,0.7);
 	margin: auto;
@@ -325,6 +329,11 @@ button.register:hover{
 	padding-bottom: 20px;
 	margin-top: 50px;
 	border: 1.5px solid var(--main-dark-pink);
+}
+
+iframe#gmap_canvas{
+	width: 400px;
+	height: 500px;
 }
 
 .bus .bus_route{
@@ -364,6 +373,10 @@ button.register:hover{
 
 .car img{
 	margin-top: 150px;
+}
+
+.car h4{
+	margin-top: 50px;
 }
 
 .car .car_text{
@@ -784,6 +797,24 @@ button.register:hover{
 		top: 0px;
 	}
 
+	/***Travel Page****/
+	.mapouter{
+		width: auto;
+		height: 300px;
+
+	}
+
+	.gmap_canvas{
+		width: auto;
+		height: 300px;
+	}
+
+	iframe#gmap_canvas{
+		width: auto;
+		height: 300px;
+
+	}
+
 	.fixed{ /**Delete fixed class later*/
 		bottom: 0;
 		position: fixed;
@@ -799,4 +830,5 @@ button.register:hover{
 	.block{
 		padding-top: 50px;
 	}
+
 }
