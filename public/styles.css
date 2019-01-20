@@ -207,6 +207,10 @@ footer i:hover{
 	color: var(--main-white);
 }
 
+.countdown ul{
+	padding-left: 0px;
+}
+
 .countdown li {
 	display: inline-block;
 	list-style-type: none;
@@ -332,6 +336,11 @@ button.register:hover{
 }
 
 iframe#gmap_canvas{
+	width: 400px;
+	height: 500px;
+}
+
+iframe#gmap_canvas2{
 	width: 400px;
 	height: 500px;
 }
@@ -812,7 +821,11 @@ iframe#gmap_canvas{
 	iframe#gmap_canvas{
 		width: auto;
 		height: 300px;
+	}
 
+	iframe#gmap_canvas2{
+		width: auto;
+		height: 300px;
 	}
 
 	.fixed{ /**Delete fixed class later*/
