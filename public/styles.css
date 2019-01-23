@@ -309,6 +309,15 @@ button.register:hover{
 	margin: auto;
 }
 
+.sponsor_category{
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.sponsor_grid img{
+	width: 100%;
+}
+
 /* ==========================================================================
    Travel page styles
    ========================================================================== */
