@@ -314,6 +314,14 @@ button.register:hover{
 	margin-bottom: 30px;
 }
 
+.sponsor_grid{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .sponsor_grid img{
 	width: 100%;
 }
