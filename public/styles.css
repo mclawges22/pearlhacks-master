@@ -76,6 +76,10 @@ a{
 	font-family: 'Caviar Dreams';
 }
 
+a:hover{
+	cursor: pointer;
+}
+
 button:focus{
 	outline: 0px;
 }
