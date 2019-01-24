@@ -307,6 +307,7 @@ button.register:hover{
 
 .sponsors_wrap{
 	margin: auto;
+	top: -90px;
 }
 
 .sponsor_category{
@@ -324,6 +325,10 @@ button.register:hover{
 
 .sponsor_grid img{
 	width: 100%;
+}
+
+.sponsor_grid img:hover{
+	cursor: pointer;
 }
 
 /* ==========================================================================
@@ -802,6 +807,10 @@ iframe#gmap_canvas2{
 		padding-top: 50px;
 		padding-bottom: 50px;
 	}
+
+	.sponsor_grid img {
+    	width: 70%;
+    }
 
 
 	/***Home Page****/
