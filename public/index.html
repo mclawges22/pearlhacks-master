@@ -107,6 +107,18 @@
 					<img src="./img/sponsors/P_Red_Ventures.png" alt="Red Ventures">
 				</a>
 
+				<div class="sponsor_grid col-lg-1"></div>
+				<div class="sponsor_grid col-lg-1"></div>
+
+				<a class="sponsor_grid col-lg-5 col-md-6" target="blank" href="https://cs.unc.edu/">
+					<img src="./img/sponsors/P_UNC_CS.png" alt="UNC Computer Science">
+				</a>
+
+
+				<a class="sponsor_grid col-lg-5 col-md-6" target="blank" href="https://sph.unc.edu/">
+					<img src="./img/sponsors/P_UNC_Gillings.png" alt="UNC Gillings School of Public Health">
+				</a>
+
 				<!-- Gold Sponsors Goes Here ------------------- -->
 				<a class="sponsor_grid col-lg-4 col-md-4" target="blank" href="https://www.bnymellon.com">
 					<img src="./img/sponsors/G_BNY_Mellon.png" alt="BNY Mellon">
@@ -173,7 +185,7 @@
 					<img src="./img/sponsors/S_Optum.png" alt="Optum">
 				</a>
 
-				<div class="sponsor_grid col-lg-3 col-md-3"></div>
+				<div class="sponsor_grid col-lg-1 col-md-1"></div>
 
 				<a class="sponsor_grid col-lg-3 col-md-3" target="blank" href="https://www.sas.com/">
 					<img src="./img/sponsors/S_SAS.png" alt="SAS">
@@ -183,7 +195,11 @@
 					<img src="./img/sponsors/S_Willow_Tree.png" alt="Willow Tree">
 				</a>
 
-				<div class="sponsor_grid col-lg-3 col-md-3"></div>
+				<a class="sponsor_grid col-lg-3 col-md-3" target="blank" href="https://renci.org/">
+					<img src="./img/sponsors/S_Renci.png" alt="Renci">
+				</a>
+
+				<div class="sponsor_grid col-lg-1 col-md-1"></div>
 
 				<!-- Extra Sponsors Goes Here ------------------- -->
 				<div class="sponsor_grid col-lg-4 col-md-4"></div>
@@ -198,6 +214,14 @@
 	</div>
 
 	<footer class="footer"></footer>
+
+	<script>
+		$(".sponsor_grid").hover(function(){
+			$(this).css("opacity", "0.8");
+		}, function(){
+		  $(this).css("opacity", "1");
+		});
+	</script>
 
 </body>
 </html>

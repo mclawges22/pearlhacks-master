@@ -453,6 +453,10 @@ iframe#gmap_canvas2{
 	color: var(--main-black);
 }
 
+.car_item h6 a{
+	color: var(--main-black);
+}
+
 .car_form{
 	padding-top: 50px;
 }
@@ -783,9 +787,9 @@ iframe#gmap_canvas2{
 	}
 
 	footer i{
-		font-size: 25px;
-		margin-left: 5px;
-		margin-right: 5px;
+		font-size: 30px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 
 	.countdown li{
