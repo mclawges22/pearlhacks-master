@@ -518,6 +518,14 @@ iframe#gmap_canvas2{
 	width: 100%;
 }
 
+.saturday{
+	margin: auto;
+}
+
+.sunday{
+	background-color: var(--main-dark-pink);
+    color: white;
+}
 /* ==========================================================================
    FAQ page styles
    ========================================================================== */
