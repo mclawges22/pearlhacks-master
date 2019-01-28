@@ -522,7 +522,7 @@ iframe#gmap_canvas2{
 	margin: auto;
 	text-align: left;
 	background-color: var(--main-black);
-	color: var(--main-light-pink);
+	color: var(--main-white);
 	text-align: center;
 }
 
@@ -535,6 +535,13 @@ iframe#gmap_canvas2{
     color: white;
     position: relative;
 }
+
+.workshop{
+	background-color: var(--main-black);
+	color: var(--main-white);
+	text-align: center;
+}
+
 /* ==========================================================================
    FAQ page styles
    ========================================================================== */
