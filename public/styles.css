@@ -504,27 +504,36 @@ iframe#gmap_canvas2{
 	background-color: var(--main-light-pink);
 }
 
-.calendar.float{
-	top: -200px;
+.side-graphics img{
+	width: 100%;
 }
 
 .calendar{
+	margin: auto;
+	text-align: left;
+	margin-top: 40px;
+}
+
+.calendar .location h5{
+	font-style: italic;
+}
+
+.saturday{
+	margin: auto;
+	text-align: left;
 	background-color: var(--main-black);
 	color: var(--main-light-pink);
 	text-align: center;
 }
 
-.side-graphics img{
-	width: 100%;
-}
-
-.saturday{
-	margin: auto;
+.saturday h4{
+	margin-top: 50px;
 }
 
 .sunday{
 	background-color: var(--main-dark-pink);
     color: white;
+    position: relative;
 }
 /* ==========================================================================
    FAQ page styles
