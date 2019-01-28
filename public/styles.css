@@ -334,6 +334,7 @@ button.register:hover{
 
 .sponsor_grid img:hover{
     cursor: pointer;
+    opacity: 0.5;
 }
 
 /* ==========================================================================
@@ -545,18 +546,25 @@ iframe#gmap_canvas2{
     margin-right: auto;
 }
 
+.date{
+    font-size: 30px;
+}
+
 .saturday{
     margin: auto;
     background-color: var(--main-black);
     color: var(--main-light-pink);
+    padding-top: 8%;
+    padding-bottom: 8%;
 }
+
 
 .sunday{
     background-color: var(--main-dark-pink);
     color: white;
     position: relative;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 8%;
+    padding-bottom: 8%;
 }
 
 .workshop{
