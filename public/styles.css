@@ -917,7 +917,11 @@ iframe#gmap_canvas2{
     .col-4.location{
         flex: 0 0 100%;
         max-width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
+    }
+
+    .date{
+        margin-top: 40px;
     }
 
     /***Travel Page****/
