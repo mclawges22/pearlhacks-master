@@ -508,22 +508,46 @@ iframe#gmap_canvas2{
 	width: 100%;
 }
 
+.turnaround img{
+	-webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+	-moz-transform: rotate(180deg);        /* FF */
+	-o-transform: rotate(180deg);          /* Opera */
+	-ms-transform: rotate(180deg);         /* IE9 */
+	transform: rotate(180deg);             /* W3C compliant browsers */
+
+}
+
 .calendar{
 	margin: auto;
 	text-align: left;
 	margin-top: 40px;
 }
 
+.calendar .time h5{
+	font-size: 20px;
+}
+
+
+.calendar .event h5{
+	font-style: italic;
+	font-size: 20px;
+}
+
+
 .calendar .location h5{
 	font-style: italic;
+	font-size: 20px;
+}
+
+.row{
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .saturday{
 	margin: auto;
-	text-align: left;
 	background-color: var(--main-black);
 	color: var(--main-white);
-	text-align: center;
 }
 
 .saturday h4{
@@ -540,6 +564,8 @@ iframe#gmap_canvas2{
 	background-color: var(--main-black);
 	color: var(--main-white);
 	text-align: center;
+	margin: 0px;
+	height: 20%;
 }
 
 /* ==========================================================================
@@ -861,8 +887,29 @@ iframe#gmap_canvas2{
 
 
 	/***Schedule Page****/
-	.calendar.float{
-		top: 0px;
+	.calendar{
+		text-align: center;
+	}
+
+	.col-4.time{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.col-4.time h5{
+		font-family: 'Caviar Dreams';
+		font-weight: 600;
+	}
+
+	.col-4.event{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.col-4.location{
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 20px;
 	}
 
 	/***Travel Page****/
