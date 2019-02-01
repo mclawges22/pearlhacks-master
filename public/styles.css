@@ -547,6 +547,7 @@ iframe#gmap_canvas2{
 
 .date{
     font-size: 30px;
+    margin-top: 40px;
 }
 
 .saturday{
@@ -564,6 +565,7 @@ iframe#gmap_canvas2{
     position: relative;
     padding-top: 8%;
     padding-bottom: 8%;
+    top: -70px;
 }
 
 .workshop{
@@ -572,6 +574,7 @@ iframe#gmap_canvas2{
     text-align: center;
     margin: 0px;
     height: 20%;
+    top: -70px;
 }
 
 /* ==========================================================================
