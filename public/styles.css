@@ -509,6 +509,11 @@ iframe#gmap_canvas2{
     width: 100%;
 }
 
+.side-graphics.bot img{
+    position: absolute;
+    bottom: 0px;
+}
+
 .turnaround img{
     -webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
     -moz-transform: rotate(180deg);        /* FF */
@@ -528,7 +533,6 @@ iframe#gmap_canvas2{
     font-size: 20px;
     text-align: left;
 }
-
 
 .calendar .event h5{
     font-size: 20px;
@@ -575,6 +579,10 @@ iframe#gmap_canvas2{
     margin: 0px;
     height: 20%;
     top: -70px;
+}
+
+.workshop .time{
+    margin-top: 30px;
 }
 
 /* ==========================================================================
@@ -911,6 +919,10 @@ iframe#gmap_canvas2{
         text-align: center;
     }
 
+    .calendar .time h4{
+        text-align: center;
+    }
+
     .col-4.event{
         flex: 0 0 100%;
         max-width: 100%;
@@ -920,6 +932,11 @@ iframe#gmap_canvas2{
         flex: 0 0 100%;
         max-width: 100%;
         margin-bottom: 40px;
+    }
+
+    .col-8.event{
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 
     .date{
