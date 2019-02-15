@@ -281,7 +281,7 @@ button.register:hover{
     margin: auto;
 }
 
-.sponsors .subtitle{
+.logistics .subtitle{
     background-color: var(--main-dark-pink);
     position: relative;
     height: 300px;
@@ -290,14 +290,42 @@ button.register:hover{
     z-index: -1;
 }
 
+.logistics .subtitle h2{
+    padding-top:0px;
+}
+
+.logistics h3{
+    color: var(--main-dark-pink);
+    margin-top: 10px;
+}
+
+.more{
+    margin-top: 80px;
+}
+
+.more a{
+    color: var(--main-dark-pink);
+}
+
+.sponsors{
+    margin-top: 100px;
+}
+
+.sponsors .subtitle{
+    background-color: var(--main-dark-pink);
+    position: relative;
+    height: 300px;
+    padding-top: 120px;
+    z-index: -1;
+}
+
 .sponsors .subtitle h2{
     padding-top:0px;
 }
 
-.sponsors_gallery{
-    margin: auto;
-    top: -80px;
-    text-align: center;
+.sponsors_wrap{
+    top: 50px;
+    margin-bottom: 80px;
 }
 
 .sponsors_gallery a{
@@ -307,11 +335,6 @@ button.register:hover{
 
 .sponsors_gallery a:hover{
     color: var(--main-dark-pink);
-}
-
-.sponsors_wrap{
-    margin: auto;
-    top: -90px;
 }
 
 .sponsor_category{
@@ -894,8 +917,17 @@ iframe#gmap_canvas2{
 
 
     /***Home Page****/
+    .logistics .subtitle{
+        padding-top: 200px;
+    }
+
+    .logistics h3{
+        margin-top: 20px;
+    }
+
     .sponsors .subtitle{
         height: auto;
+        padding-top:50px;
     }
 
     .sponsors .subtitle h2{
@@ -963,6 +995,7 @@ iframe#gmap_canvas2{
     .mapouter{
         width: auto;
         height: 300px;
+        text-align: center;
 
     }
 
