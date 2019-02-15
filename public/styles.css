@@ -288,6 +288,7 @@ button.register:hover{
     padding-top: 175px;
     top: -150px;
     z-index: -1;
+    margin-bottom: -70px;
 }
 
 .logistics .subtitle h2{
