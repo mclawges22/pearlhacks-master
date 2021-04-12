@@ -1,345 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
+
 <head>
-    <title>Pearl Hacks</title>
-    
-    <meta charset="UTF-8">
-    <meta http-equiv="Cache-control" content="public">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta property="og:title" content="Pearl Hacks -- FAQ">
-    <meta property="og:image" content="https://pearlhacks.com/img/meta.png">
-
-    <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous">
-    </script>
-
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-150933241-1'></script>
     <script>
-
-        $(document).ready(function() {
-            $(".countdown").load("./partials/countdown.html");
-            $("footer").load("./partials/footer.html");
-            $(".navbar").load("./partials/navbar.html");
-        });
-
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-150933241-1');
     </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./js/countdown.js"></script>
-    <script type="text/javascript" src="./js/event.js"></script>
+    <!-- Meta Tags-->
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta http-equiv='Cache-control' content='public'>
+    <meta name='description'
+        content='Pearl Hacks is a hackathon for female and non-binary students. We especially cater to first-time hackers who are looking for a supportive environment to explore technology.'>
+    <meta name='google-site-verification' content='BVA1NKpsy9IenrjkPDUVV9naJOgnlX8MpPhV5wT_c0w' />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="img/fa-logo.png" />
-    <link rel="stylesheet" href="./styles.css">
-    
+    <!-- Favicon -->
+    <link rel='icon' href='assets/images/ph-favicon.png' type='image/png' />
+    <link rel='shortcut icon' href='assets/images/ph-favicon.png' type='image/png' />
+
+    <!-- CSS (Bootstrap, Custom Styles -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'
+        integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
+    <link rel='stylesheet' href='assets/styles.css'>
+
+    <!-- Bootstrap Script Requirements (Slim JQuery, Popper, Bootstrap, Font Awesome) -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'>
+    </script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'
+        integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo'
+        crossorigin='anonymous'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'
+        integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6'
+        crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/54e7e1ecc6.js' crossorigin='anonymous'></script>
+
+    <!-- Custom Scripts -->
+    <script>
+       $(document).ready(function () {
+            $('body>footer').load('./components/footer.html');
+            $('body>header').load('./components/navbar.html');
+            
+            var scroll_pos = 0;
+            $(document).scroll(function() {
+                scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 100) {
+                    $('.navbar').css('box-shadow', '0px 2px 3px rgb(0,0,0,.15)');
+                } else {
+                    $('.navbar').css('box-shadow', 'none');
+                }
+            });
+        });
+    </script>
+    <script src='scripts/sheetsToJSON.js'></script>
+    <script src='scripts/faq.js'></script>
+    <title>Pearl Hacks</title>
 </head>
 
 <body>
-   <!--  <div class="countdown"></div> -->
-    <div class="logo">      
-        <a class="" href="index.html">      
-            <img src="img/nav_logo.png" width="200"  alt="">        
-        </a>        
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light"></nav>
+    <header>
 
-    <div class="faq subtitle">
-        <h2>FAQ</h2>
-    </div>
-
-    <div class ="wrapper col-lg-10">
-        <div id="accordion">
-          <div class="wrapper2">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  <h5>Can I attend?</h5>
-                </button>
-              </h5>
-            </div>
-
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-              <div class="card-body">
-                <h6>As long as you identify as female or non-binary and will be 18 at the start of the hackathon, you are more than welcome to attend! Professionals are encouraged to attend as mentors regardless of gender, and men are also welcome to attend as volunteers.</h6>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <h5>How do I get in?</h5>
-                </button>
-              </h5>
-            </div>
-
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-              <div class="card-body">
-               <h6>Anyone can attend Pearl Hacks. Just thoughtfully fill out the application. The only limitation is the amount of food we can serve over the weekend, but if you register early... come hungry.</h6>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  <h5>…But I can’t code</h5>
-                </button>
-              </h5>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-              <div class="card-body">
-                <h6>Lucky for you, Pearl Hacks prides itself in being a first-time-friendly hackathon! We host lots of events aimed at helping first-time coders and hackers alike familiarize themselves with how to code. We also have a team of mentors who would love to show you the ropes. Not to mention, you’ll be surrounded by hundreds of other hackers to support you and cheer you on.</h6>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header" id="headingFour">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  <h5>Will there be food?</h5>
-                </button>
-              </h5>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-              <div class="card-body">
-                <h6>Is grass green? Is the sky a beautiful Carolina Blue? Don’t worry: We’ll provide five full meals throughout the hackathon, and there will be plenty of snacks in between. You won’t be hungry. Please don't take more food than you need.</h6>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card">
-            <div class="card-header" id="headingFive">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                  <h5>What about sleep?</h5>
-                </button>
-              </h5>
-            </div>
-            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-              <div class="card-body">
-                <h6>We have a limited number of air mattresses available for those who wish to use them; feel free to bring a pillow and blanket. We will have a dedicated “quiet room” (we can’t call it a sleeping room for legal purposes but you can think of it as one). If you prefer a hotel, there are a number of options adjacent to campus, but they aren't free!</h6>
-              </div>
-            </div>
-          </div>
+    </header>
+    <main>
+        <div id='header-top'>
         </div>
-
-        <div class="wrapper2">
-          <div class="card">
-            <div class="card-header" id="headingSix">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                  <h5>Do you reimburse travel?</h5>
-                </button>
-              </h5>
-            </div>
-
-            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-              <div class="card-body">
-                <h6>Please see the travel tab for all questions related to travel.</h6>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header" id="headingSeven">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                  <h5>What kind of hardware be provided?</h5>
-                </button>
-              </h5>
-            </div>
-
-            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
-              <div class="card-body">
-               <h6>MLH is providing the full hardware lab. In addition we will have soldering and assorted components, Arduinos, Raspberry Pis, and more Pebbles than you can wear on four limbs…</h6>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header" id="headingEight">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                  <h5>Can I use old code?</h5>
-                </button>
-              </h5>
-            </div>
-            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
-              <div class="card-body">
-                <h6>All work on a project should be done at the hackathon. Teams can use libraries, frameworks, or open-source code in their projects. Working on a project before the event and open-sourcing it for the sole purpose of using the code during the event is against the spirit of the rules and is not allowed. Adding new features to existing projects is allowed. Judges will only consider new functionality introduced or new features added during the hackathon in determining the winners.</h6>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header" id="headingNine">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                  <h5>What about my team?</h5>
-                </button>
-              </h5>
-            </div>
-            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
-              <div class="card-body">
-                <h6>You can create your team with whoever you like, up to four people, once you arrive. Or if you are really determined, you can create a project all by yourself! We will have a team-forming event at the beginning event for those still looking.</h6>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card">
-            <div class="card-header" id="headingTen">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                  <h5>Will I fit in?</h5>
-                </button>
-              </h5>
-            </div>
-            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
-              <div class="card-body">
-                <h6>Yes, you will! The entire UNC Computer Science Department is committed to making computer science a more diverse field. We are working to make this Pearl Hacks the most supportive environment for women and nonbinaries in tech, so come willing and ready to meet inspirational and passionate people excited to hack with you.</h6>
-              </div>
-            </div>
-          </div>
+        <header class='py-0 m-0'><h1 class='py-3 m-0'>FAQ</h1>
+        </header>
+        <div id='header-bottom'>
         </div>
-    </div>
-    </div>
-
-    <div class="guideline">
-        <h2>Guidelines</h2>
-        <div class="block container">
-            <div class="row justify-content-md-center">
-                <div class="box col-lg-3">
-                    <div class="grid">
-                        <div class="front">
-                            <h4>Attendee Requirement</h4>
-                        </div>
-                         <div class="back">
-                            <h6>In order to attend Pearl Hacks, you must have a valid university ID. You may not enter the venue without a valid university ID.</h6>
-                         </div>
-                    </div>
-                </div>
-
-                <div class="box col-lg-3">
-                    <div class="grid">
-                        <div class="front">
-                            <h4>Late Sign-up</h4>
-                        </div>
-                         <div class="back">
-                            <h6>Anyone may attend Pearl Hacks, even if you register late or not at all. You can sign up at the door. In order to accommodate everyone, we cannot guarantee food or t-shirts for late registrants. There are many affordable dining options within walking distance of the venue and plenty of room for you to work while you're here. </h6>
-                         </div>
-                    </div>
-                </div>
-                <div class="box col-lg-3">
-                    <div class="grid">
-                        <div class="front">
-                            <h4>Venue Expectation</h4>
-                        </div>
-                         <div class="back">
-                            <h6>We do not allow alcohol, weapons, or illegal substances in our venues. Please do not permanently modify or damage the rooms that we will be using. If you see something that needs immediate attention, please notify an event volunteer or message a director on Slack. Our venue is wheelchair accessible.</h6>
-                         </div>
-                    </div>
-                </div>
+        <div class='container py-5'>
+            <h2>Beginner's FAQ</h2>
+            <div id='beginnerfaq'>
             </div>
 
-            <div class="row justify-content-md-center">
-                <div class="box col-lg-3">
-                    <div class="grid">
-                        <div class="front">
-                            <h4>Trash & Recycling</h4>
-                        </div>
-                         <div class="back">
-                            <h6>Please clean up after yourself and use the proper receptacles for your garbage. If it’s recyclable, please recycle. If a trash can is overflowing, try to find another one and alert an organizer to the problem by messaging one on Slack.</h6>
-                         </div>
-                    </div>
-                </div>
-                <div class="box col-lg-3">
-                    <div class="grid">
-                        <div class="front">
-                            <h4>Code Requirement</h4>
-                        </div>
-                         <div class="back">
-                            <h6>All code presented for judging must be written during the event. Contestants that violate this rule will be disqualified. The easiest way to avoid doing this is by trying something you've never done before.</h6>
-                         </div>
-                    </div>
-                </div>
-                <div class="box col-lg-3">
-                    <div class="grid">
-                        <div class="front">
-                            <h4>Food Requirement</h4>
-                        </div>
-                         <div class="back">
-                            <h6>Please don't take more food than you need. Keep the environment in mind and don't use excessive disposables.</h6>
-                         </div>
-                    </div>
-                </div>
+            <h2 class='mt-5'>General FAQ</h2>
+            <div id='generalfaq'>
             </div>
 
-            <div class="row justify-content-md-center">
-                <div class="box col-lg-3">
-                    <div class="grid">
-                        <div class="front">
-                            <h4>Emergencies</h4>
-                        </div>
-                         <div class="back">
-                            <h6>In the event of an emergency, call 911, and then message a director on Slack.</h6>
-                         </div>
-                    </div>
-                </div>
-                <div class="box col-lg-3">
-                    <div class="grid">
-                        <div class="front">
-                            <h4>MLH Data Sharing Notice</h4>
-                        </div>
-                         <div class="back">
-                            <h6>All Pearl Hacks attendees must agree to the MLH Data Sharing Notice.</h6>
-                         </div>
-                    </div>
-                </div>
-                <div class="box col-lg-3">
-                    <div class="grid">
-                        <div class="front">
-                            <h4>MLH Code of Conduct</h4>
-                        </div>
-                         <div class="back">
-                            <h6>In addition to everything listed on this page, Pearl Hacks also requires all attendees to abide by the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code of Conduct</a>.</h6>
-                         </div>
-                    </div>
-                </div>
+            <h2 class='mt-5'>Guidelines</h2>
+            <div id='guidelines'>
             </div>
         </div>
-    </div>
+    </main>
+    <footer>
 
-    <footer class="footer"></footer>
-
-<script>
-    
-    $('.grid').on('click', function () {
-        $(this).toggleClass('flipped');
-    });
-
-
-    $(function(){
-        setTimeout(
-            function(){
-                $('.faq-link').addClass('active')
-            }, 100);
-    })
-
-</script>
-
+    </footer>
 </body>
+
 </html>

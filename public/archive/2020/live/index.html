@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150933241-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150933241-1');
+    </script>
+
+    <title>Pearl Hacks</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Cache-control" content="public">
+    <meta name="description"
+        content="Pearl Hacks is a hackathon for female and non-binary students. We especially cater to first-time hackers who are looking for a supportive environment to explore technology.">
+    <link rel="icon" href="../assets/images/ph-favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="../assets/images/ph-favicon.png" type="image/png" />
+
+    <!--Boostrap Requirements-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <meta name=“google-site-verification” content=“BVA1NKpsy9IenrjkPDUVV9naJOgnlX8MpPhV5wT_c0w” />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("footer").load("./components/footer.html");
+            $("header").load("./components/navbar.html");
+        });
+    </script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Feb 23, 2020 10:30:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s until submission";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "Demo is at 12pm!";
+            }
+        }, 1000);
+    </script>
+</head>
+
+<body class='container-fluid'>
+    <header class='row sticky-top'></header>
+    <aside
+        class='row text-center pt-3 pt-md-5 pb-5 d-flex flex-column justify-content-center align-items-center align-content-center'>
+        <!-- <div class="alert bg-bright-outline col-11 col-md-9 pt-4 rounded" role="alert">
+            <h3 class="alert-heading">Inclement Weather Notice <i class="fas fa-exclamation-circle"></i></h3>
+            <p class='pb-0'>UNC has recently announced that campus will be under Reduced Operations at Friday 10am. This will <span class='font-weight-bold'>not affect our event schedule</span>, but
+                if conditions change in the future, we will make additional updates on Slack and our
+                website.
+            </p>
+        </div> -->
+        <div class='col-12'>
+            <h1 class='font-weight-bold title pt-4'>Pearl Hacks 2020 Live</h1>
+            <h4 class='pt-4' id='countdown'>XX:XX Hours until submission</h4>
+        </div>
+        <div class='col-12 pb-4'>
+            <a class='btn btn-light mt-4 w-20' href='https://pearlhacks2020.devpost.com' target='new'>Go to
+                Devpost</a>
+            <br class='d-inline d-md-none'>
+            <a class='btn btn-light-outline mt-4 w-15' href='http://bit.ly/ph2020slack' target='new'>Join Slack</a>
+            <br class='d-inline d-md-none'>
+            <a class='btn btn-light-outline mt-4 w-15' href='https://ph-helpq.herokuapp.com/' target='new'>Go to
+                HelpQ</a>
+
+
+        </div>
+
+        <div
+            class='col-12 d-flex flex-column justify-content-center align-content-center align-items-center row text-left'>
+            <!-- <table class='table col-12 col-lg-9 shadow rounded'>
+                <tr class="header-row">
+                    <th colspan='5' class='rounded-top'>
+                        <h5>Friday, Feb. 21st</h5>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        9:30pm
+                    </td>
+                    <td colspan='3'>
+                        Buses Arrive
+                        <p class='font-italic mb-0'>Hackers arriving Friday night will sleep in <a href='https://goo.gl/maps/JxY3DYeLHqAHePx98' target='new'>Sitterson Hall</a></p>
+                    </td>
+                    <td>
+                        Venable Lot
+                    </td>
+                </tr>
+                <tr>
+                    <td class='rounded'>
+                        9:30pm
+                    </td>
+                    <td colspan='3'>
+                        Dinner
+                    </td>
+                    <td class='rounded'>
+                        Sitterson Lobby
+                    </td>
+                </tr>
+            </table> -->
+            <table class='table col-12 col-lg-9 shadow rounded'>
+                <tr class="header-row">
+                    <th colspan='5' class='rounded-top'>
+                        <h5>Saturday, Feb. 22nd</h5>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        9:00am - 10:00am
+                    </td>
+                    <td colspan='3'>
+                        Check-in
+                    </td>
+                    <td>
+                        Great Hall Lobby
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        9:00am - 10:30am
+                    </td>
+                    <td colspan='3'>
+                        Breakfast
+                    </td>
+                    <td>
+                        Great Hall
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        9:55am - 11:15am
+                    </td>
+                    <td colspan='3'>
+                        Opening Ceremony
+                    </td>
+                    <td>
+                        Auditorium
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        11:15am
+                    </td>
+                    <td colspan='3'>
+                        Hacking Begins
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        11:15am - 1:15pm
+                    </td>
+                    <td colspan='3'>
+                        Sponsor Fair
+                    </td>
+                    <td>
+                        Great Hall
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        11:15am - 11:45am
+                    </td>
+                    <td colspan='3'>
+                        1st Time Hacker Workshop
+                    </td>
+                    <td>
+                        Auditorium
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        11:45am - 12:15pm
+                    </td>
+                    <td colspan='3'>
+                        Team-Forming Event
+                    </td>
+                    <td>
+                        Art Gallery
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        12:00pm - 2:00pm
+                    </td>
+                    <td colspan='3'>
+                        Lunch
+                    </td>
+                    <td>
+                        Great Hall
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        1:15pm - 6:00pm
+                    </td>
+                    <td colspan='3'>
+                        Workshops
+                    </td>
+                    <td>
+                        3400's & 3200's Classrooms
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        6:00pm - 8:00pm
+                    </td>
+                    <td colspan='3'>
+                        Dinner
+                    </td>
+                    <td>
+                        Great Hall
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        7:00pm - 9:15pm
+                    </td>
+                    <td colspan='3'>
+                        Workshops
+                    </td>
+                    <td>
+                        3400's & 3200's Classrooms
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        7:30pm - 8:30pm
+                    </td>
+                    <td colspan='3'>
+                        MLH Event
+                    </td>
+                    <td>
+                        3201
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        9:00pm - 10:00pm
+                    </td>
+                    <td colspan='3'>
+                        Twitter Boba Event
+                    </td>
+                    <td>
+                        3206
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        9:30pm - 10:30pm
+                    </td>
+                    <td colspan='3'>
+                        Late Night Event: Cheerwine & Design
+                    </td>
+                    <td>
+                        Great Hall
+                    </td>
+                </tr>
+                <tr>
+                    <td class='rounded'>
+                        12:00am - 1:00am
+                    </td>
+                    <td colspan='3'>
+                        Midnight Meal
+                    </td>
+                    <td class='rounded'>
+                        Great Hall
+                    </td>
+                </tr>
+            </table>
+            <table class='table col-12 col-lg-9 shadow rounded'>
+                <tr class="header-row">
+                    <th colspan='5' class='rounded-top'>
+                        <h5>Sunday, Feb. 23rd</h5>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        8:00am - 9:00am
+                    </td>
+                    <td colspan='3'>
+                        Breakfast
+                    </td>
+                    <td>
+                        Great Hall
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        9:00am
+                    </td>
+                    <td colspan='3'>
+                        Wakeup Call
+                    </td>
+                    <td>
+                        Great Hall
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        10:30am
+                    </td>
+                    <td colspan='3'>
+                        Project Submission Deadline
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        11:00am - 2:00pm
+                    </td>
+                    <td colspan='3'>
+                        Lunch
+                    </td>
+                    <td>
+                        Great Hall
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        12:00pm - 2:30pm
+                    </td>
+                    <td colspan='3'>
+                        Demo Fair
+                    </td>
+                    <td>
+                        Great Hall
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        3:00pm - 4:00pm
+                    </td>
+                    <td colspan='3'>
+                        Closing Ceremony
+                    </td>
+                    <td>
+                        Auditorium
+                    </td>
+                </tr>
+                <tr>
+                    <td class='rounded'>
+                        4:30pm
+                    </td>
+                    <td colspan='3'>
+                        Buses Leave
+                    </td>
+                    <td class='rounded'>
+                        Woollen/Fetzer
+                    </td>
+                </tr>
+            </table>
+        </div>
+        </div>
+    </aside>
+    <section class='row d-lg-flex flex-column align-items-center text-center'>
+        <h2 class='font-weight-bold text-center mt-5'>Our Sponsors</h2>
+        <h4 class='font-weight-bold'>Thanks for making Pearl Hacks possible!</h4>
+        <div id='sponsors' class='col-12 col-lg-8 d-flex flex-column align-items-center'>
+            <div class='m-2 p-2 bg-white row justify-content-center'>
+                <!-- Title Sponsor -->
+                <div class='col-12'>
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://www.captechconsulting.com/" class='col-12'>
+                            <img src="../assets/images/sponsors/P_CapTech.png" alt="CapTech" class='img-fluid' id="title-sponsor">
+                        </a>
+                    </div>
+
+                </div>
+                <!-- Pearl Sponsors -->
+                <div class='col-12'>
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://www.twitter.com/" class='col-12 col-lg-6'>
+                            <img src="../assets/images/sponsors/Twitter.png" alt="Twitter" class='img-fluid'>
+                        </a>
+                    </div>
+                </div>
+                <!-- Gold Sponsors -->
+                <div class='col-12'>
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://www.avalara.com" class='col-12 col-lg-4'>
+                            <img src="../assets/images/sponsors/Avalara.png" alt="Avalara" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://campus.capitalone.com/" class='col-12 col-lg-4'>
+                            <img src="../assets/images/sponsors/P_Capital_One.png" alt="Capital One" class='img-fluid'>
+                        </a>
+
+                        <a target="blank" href="https://www.deutschebank.co.in" class='col-12 col-lg-4'>
+                            <img src="../assets/images/sponsors/S_Deutsche_Bank.png" alt="Deutsche Bank" class='img-fluid'>
+                        </a>
+
+                    </div>
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://www.genesys.com" class='col-12 col-lg-4'>
+                            <img src="../assets/images/sponsors/G_Genesys.png" alt="Genesys" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://www.ncino.com" class='col-12 col-lg-4'>
+                            <img src="../assets/images/sponsors/G_nCino.png " alt="nCino" class='img-fluid'>
+                        </a>
+
+                        <a target="blank" href="https://www.redventures.com/" class='col-12 col-lg-4'>
+                            <img src="../assets/images/sponsors/P_Red_Ventures.png" alt="Red Ventures" class='img-fluid'>
+                        </a>
+                    </div>
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://www.wellsfargo.com" class='col-12 col-lg-4'>
+                            <img src="../assets/images/sponsors/Wells Fargo.png" alt="Wells Fargo" class='img-fluid'>
+                        </a>
+                    </div>
+                </div>
+                <!-- Silver Sponsors -->
+                <div class='col-12'>
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://www.appian.com" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/Appian.png" alt="Appian" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://www.bandwidth.com" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/S_Bandwith.png" alt="Bandwidth" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://www.barings.com" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/S_Barings.png" alt="Barings" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://cisco.com/" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/Cisco.png" alt="Cisco" class='img-fluid'>
+                        </a>
+                    </div>
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://www.credit-suisse.com" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/S_Credit_Suisse.png" alt="Credit Suisse" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://www.fidelity.com" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/G_Fidelity.png" alt=Fidelity class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://www.google.com" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/S_Google.png" alt='Google' class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://www.cloud.google.com" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/GCP.jpg" alt='Google Cloud' class='img-fluid'>
+                        </a>
+                    </div>
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://www.macys.com" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/Macys.png" alt="Macy's" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://www.metlife.com" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/S_MetLife.png" alt="MetLife" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://optum.com" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/S_Optum.png" alt="Optum" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://www.renci.org" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/S_Renci.png" alt="Renci" class='img-fluid'>
+                        </a>
+                    </div>
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://splunk.com" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/G_Splunk.png" alt="Splunk" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://vanguard.com" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/Vanguard.png" alt="Vanguard" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://willowtreeapps.com" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/S_Willow_Tree.png" alt="Willow Tree" class='img-fluid'>
+                        </a>
+                    </div>
+                </div>
+                <div class='col-12'>
+                    <!-- Custom Sponsors -->
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://www.destinationhotels.com/carolina-inn" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/Carolina_inn.PNG" alt="Carolina Inn" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://unc-cssg.org/" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/CS_SG.jpg" alt=" CS + SG" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://sph.unc.edu/" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/P_UNC_Gillings.png" alt="Gillings" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://guayaki.com" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/Yerba Mate.png" alt="Yerba Mate" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://ibm.com" class='col-12 col-lg-3'>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1200px-IBM_logo.svg.png"
+                                alt="IBM" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://innovate.unc.edu/" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/Innovate_Carolina.png" alt="Innovate Carolina" class='img-fluid'>
+                        </a>
+                        <a target="blank"
+                            href="https://kaleido.io/?utm_source=googlesearch&utm_medium=cpc&gclid=CjwKCAiA-P7xBRAvEiwAow-Vacoc5waUnS9lpjSTr5tvGf3ZrqRe8NylIK1cLu4PmU32YXxpKxOOWxoCfacQAvD_BwE"
+                            class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/S_Kaleido.png" alt="Kaleido" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://microsoft.com/" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/G_Microsoft.png" alt="Microsoft" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://www.monsterenergy.com" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/Monster_Energy.png" alt="Monster Energy" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://www.palantir.com" class='col-12 col-lg-3'>
+                            <img src="https://www.law.berkeley.edu/wp-content/uploads/2016/09/Palantir-Logo-Vector-Image.png"
+                                alt="Palantir" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://rewritingthecode.org/" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/S_Rewriting_The_Code.png" alt="Rewriting the Code"
+                                class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://samsung.com" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/Samsung.png" alt="Samsung" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://www.sas.com/en_us/home.html" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/S_SAS.png" alt="SAS" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="http://hackp.ac/mlh-stickermule-hackathons" class='col-12 col-lg-3'>
+                            <img src="../assets/images/sponsors/T_Sticker_Mule.png" alt="Sticker Mule" class='img-fluid'>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class='row d-flex flex-column justify-content-center'>
+    </footer>
+</body>
+
+</html>

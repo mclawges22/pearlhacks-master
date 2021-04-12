@@ -1,0 +1,418 @@
+/* FONT FACE */
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../assets/fonts/ProximaNova-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('../assets/fonts/CaviarDreams.ttf');
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("../assets/fonts/CaviarDreams_Bold.ttf");
+    font-weight: bold;
+}
+
+/* BOOTSTRAP OVERRIDE STYLES */
+
+.content {
+    max-width: 600px !important;
+}
+* {
+    font-family: 'Proxima Nova';
+}
+
+.bg-dark {
+    background-color: #231F20 !important;
+}
+
+.btn-dark {
+    background-color: #463280;
+    color: #F0ECFF;
+    padding: .5rem 2rem;
+    border-radius: 2rem;
+    font-family: 'Caviar Dreams';
+    font-weight: bold;
+    margin-bottom: 1rem;
+    border: 2px solid #463280;
+}
+
+.btn-dark:hover {
+    background-color: transparent;
+    color: #463280;
+    border: 2px solid #463280;
+
+}
+
+.btn-light {
+    background-color: #EDE3FD;
+    color: #231F20;
+    border-radius: 2rem;
+    padding: 0.5em 2rem;
+    border: 2px solid #EDE3FD;
+    margin: 1rem;
+    font-weight: bold;
+}
+
+.btn-light:hover {
+    color: #EDE3FD;
+    background-color: transparent;
+    border: 2px solid #EDE3FD;
+}
+
+.text-light {
+    color: #DDC0FF !important;
+}
+
+.text-light-2 {
+    color: #F0ECFF !important;
+}
+
+h1, h2, h3 {
+    font-family: 'Caviar Dreams';
+    font-weight: bold;
+}
+
+.alert {
+    color: #EDE3FD;
+    border: 1px solid #DDC0FF;
+}
+
+/* NAVBAR */
+header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 5;
+}
+
+nav {
+    background-color: black;
+}
+
+nav i {
+    color: white;
+}
+
+nav a {
+    color: white !important;
+    font-size: 1.1rem;
+}
+
+.navbar-brand span, .navbar-brand b {
+    font-family: 'Caviar Dreams' !important;
+    text-transform: capitalize;
+
+}
+
+.navbar-brand img {
+    margin-bottom: 4px;
+}
+
+nav a:hover {
+    color: #DDC0FF !important;
+}
+
+/* HOME PAGE ASIDE */
+aside h1 {
+    letter-spacing: .8rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    z-index: 4;
+}
+
+#mascot {
+    width: 400px;
+    max-height: 75vh;
+    max-width: 80vw;
+}
+
+aside a {
+    color: #DDC0FF;
+    font-family: 'Caviar Dreams';
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+aside a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#bar {
+    height: 70vh;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 2rem;
+    max-height: 500px;
+}
+
+/* COMMON WAVE DECORATIONS */
+#decoration1 {
+    width: 100vw;
+    height: 20vw;
+    background-image: url('../assets/images/decoration1.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#decoration1-desktop {
+    width: 100vw;
+    height: 15vw;
+    max-height: 300px;
+    background-image: url('../assets/images/wave-desktop-01.svg');
+    background-repeat: no-repeat;
+    background-size: 120% 100%;
+    background-position: center;
+}
+
+#decoration2-desktop {
+    width: 100%;
+    height: 50vh;
+    background-image: url('../assets/images/wave-desktop-02.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+#decoration2 {
+    width: 100%;
+    height: 30vw;
+    background-image: url('../assets/images/decoration2.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: -.75rem;
+}
+
+/* MAIN SECTION */
+main {
+    padding-bottom: 2rem;
+    background-color: #F0ECFF;
+    color: #463280;
+}
+
+main a {
+    color: #8174E2;
+}
+
+main a:hover {
+    text-decoration: none;
+    color: #DDC0FF;
+}
+
+main > div p {
+    color: #463280;
+}
+
+.content {
+    max-width: 1000px;
+}
+
+h2 {
+    padding-top: 2rem;
+}
+
+.line-height-m {
+    line-height: 2.1rem;
+}
+
+.bg-bright {
+    background-color: #8174E2;
+    color: white;
+}
+
+/* SPONSORS */
+#sponsors > div img {
+    transition: all .3s;
+    padding: 1rem;
+    max-height: 250px;
+}
+
+#sponsors > div img:hover, #ph_logo:hover {
+    opacity: .4;
+}
+
+#sponsors {
+    color: #F0ECFF;
+    max-width: 900px;
+}
+
+#headshots > div {
+    width: 250px;
+    text-align: center;
+}
+
+#headshots img {
+    width: 200px;
+    height: 200px;
+}
+
+#headshots h3 {
+    font-size: larger;
+}
+
+#headshots h4 {
+    font-size: medium;
+}
+
+.table {
+    background-color: transparent;
+    border-collapse: collapse;
+    color: #463280;
+    margin-bottom: 3rem;
+    border: 5px solid #F0ECFF;
+}
+
+tr {
+    border: 2px solid #F0ECFF;
+    border-bottom: 2px solid #8174E2;
+}
+
+.header-row {
+    border: 0;
+}
+
+th {
+    background-color: #463280;
+    color: white;
+}
+
+.table h4 {
+    margin: 0;
+    color: #F0ECFF;
+    text-align: center;
+}
+
+/* FAQ ACCORDION */
+.accordion .card {
+    background-color: transparent;
+    border-radius: 0rem;
+    border: 0px solid #DDC0FF;
+    margin: 1rem -1rem 0;
+
+}
+
+.accordion .card button {
+    border-bottom: 2px solid #DDC0FF;
+    width: 100%;
+    color: #463280;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0;
+}
+
+.accordion .card button:after {
+    content: "\2212";
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #DDC0FF;
+}
+
+.accordion .collapsed:after {
+    content: '\002B' !important;
+}
+
+.accordion .card button:hover {
+    color: #DDC0FF !important;
+}
+
+.accordion .card-header {
+    border-bottom: 0px solid #DDC0FF;
+    background-color: transparent;
+}
+
+.accordion .card-body {
+    background-color: transparent;
+    color: #463280;
+    padding: 0 2rem;
+}
+
+.filler {
+    min-height: 100vh;
+}
+
+/* FOOTER */
+footer {
+    background-color: #463280;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+footer li {
+    padding: 2rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #DDC0FF;
+}
+
+footer i {
+    font-size: 2rem;
+}
+
+.gradient-dark {
+    background: transparent linear-gradient(to bottom, black 0%, transparent 100%) 0% 0% no-repeat padding-box;
+}
+
+
+/* MOBILE SCREENS */
+@media all and (max-width: 505px) {    
+    footer i {
+        font-size: 1.5rem;
+    }
+
+    footer li {
+        padding: 1rem;
+    }
+}
+
+/* LARGE SCREENS */
+@media all and (min-width: 992px) {
+    nav i {
+        font-size: 1.5rem;
+    }
+
+    #ph2020 {
+        font-size: 3.2rem;
+    }
+
+    #home_main {
+        height: 100%;
+        background-image: url('../assets/images/wave-desktop-03.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 30%;
+        background-position: 10vw 10vw;
+    }
+
+    aside {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 125% 140%;
+        background-position: top;
+    }
+
+    aside h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+
+    .gradient {
+        background: transparent linear-gradient(to bottom, #EDE3FD 0%, #F0ECFF 100%) 0% 0% no-repeat padding-box;
+    }
+
+    #decoration1-desktop {
+        max-height: 100px;
+    }
+}    

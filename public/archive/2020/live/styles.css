@@ -1,0 +1,412 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../assets/fonts/ProximaNova-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('../assets/fonts/CaviarDreams.ttf');
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("../assets/fonts/CaviarDreams_Bold.ttf");
+    font-weight: bold;
+}
+
+* {
+    font-family: 'Proxima Nova';
+}
+
+
+a {
+    color: #8174E2 !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-family: 'Caviar Dreams';
+    font-weight: bold;
+}
+
+.banner {
+    text-align: center;
+    background-color: #DDC0FF;
+    color: white;
+    font-size: small;
+}
+
+.bg-bright {
+    background-color: #DDC0FF;
+}
+
+.bg-bright h3 {
+    font-weight: bold;
+}
+
+.bg-bright-outline {
+    border-color: #8174E2;
+    border-width: 2px;
+    color: #463280;
+}
+
+.bg-bright-outline h3 {
+    color: #8174E2;
+    font-weight: bold;
+    font-family: "Caviar Dreams";
+    text-transform: uppercase;
+}
+
+#logo span,
+#logo b {
+    font-family: 'Caviar Dreams' !important;
+    font-size: 1.3rem;
+}
+
+#logo img {
+    margin-bottom: 7px;
+}
+
+#logo {
+    text-decoration: none !important;
+    margin-top: 4px;
+}
+
+.navbar {
+    background-color: white;
+    border-bottom: .8px solid gainsboro;
+    /* text-transform: uppercase; */
+    color: #231F20 !important;
+    position: sticky;
+}
+
+.navbar a {
+    color: #231F20 !important;
+    /* font-family: 'Caviar Dreams' !important; */
+}
+
+.navbar-brand span,
+.navbar-brand b {
+    font-family: 'Caviar Dreams' !important;
+}
+
+.navbar a:hover {
+    color: black !important;
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: transparent;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler i {
+    color: #231F20;
+}
+
+/* .collapse:not(.show) {
+    display: none !important
+} */
+
+.btn-light {
+    background-color: #8174E2;
+    color: white;
+    border-radius: 2rem;
+    padding: 0.5em 2rem;
+    border: 2px solid #8174E2;
+    margin: 1rem;
+    font-weight: bold;
+    font-family: 'Caviar Dreams';
+    margin-bottom: 1rem;
+    color: white !important;
+}
+
+.btn-light:hover {
+    background-color: #463280;
+    border: 2px solid #463280;
+}
+
+.btn-light-outline {
+    background-color: transparent;
+    color: #8174E2 !important;
+    border-radius: 2rem;
+    padding: 0.5em 2rem;
+    border: 2px solid #8174E2;
+    margin: 1rem;
+    font-weight: bold;
+    font-family: 'Caviar Dreams';
+    margin-bottom: 1rem;
+}
+
+.btn-light-outline:hover {
+    color: #8174E2 !important;
+    background-color: #F0ECFF;
+    border: 2px solid #8174E2;
+}
+
+.nav-item .btn {
+    padding: .5rem 1.5rem !important;
+    background-color: #8174E2;
+    margin-left: 1rem;
+    border-radius: 2rem;
+    color: white !important;
+}
+
+.nav-item .btn:hover, .btn-light:hover {
+    background-color: #463280;
+    color: white !important;
+}
+
+hr {
+    border: 1px solid #F0ECFF;
+}
+
+footer {
+    background-color: #231F20;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+footer li {
+    padding: 2rem;
+}
+
+footer a {
+    color: #F0ECFF !important;
+    transition: .3s all;
+}
+
+footer a:hover {
+    color: white !important;
+}
+
+footer i {
+    font-size: 1.5rem;
+}
+
+aside {
+    height: 100%;
+    background-image: url('../assets/images/background-1.svg');
+    background-repeat: no-repeat;
+    background-size: 120% 550px;
+    background-position: -5vw -5vh;
+}
+
+@media all and (max-width: 650px) {
+    aside {
+        background-image: none;
+    }
+}
+
+.bg-light {
+    background-color: #F0ECFF !important;
+}
+
+div>div>i {
+    color: white !important;
+    font-size: 10rem;
+}
+
+#sponsors img {
+    max-height: 250px;
+}
+
+#sponsors img:hover {
+    opacity: .7;
+}
+
+.title {
+    font-size: 3.5rem;
+}
+
+.rounded {
+    border-radius: 12px !important;
+}
+
+.rounded-top {
+    border-radius: 12px 12px 0 0 !important;
+}
+
+.rounded-top-right {
+    border-radius: 0 12px 0 0 !important;
+}
+
+.rounded-top-left {
+    border-radius: 12px 0 0 0 !important;
+}
+
+.w-15 {
+    width: 180px;
+}
+
+h3 {
+    /* font-size: .8rem; */
+    /* color: #463280; */
+}
+
+.tiles p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    /* font-family: 'Caviar Dreams'; */
+}
+
+.page-title {
+    background: linear-gradient(#8174E2, #8174E2);
+    font-weight: bold;
+    color: white;
+    z-index: 100;
+    position: relative;
+}
+
+.page-title a {
+    color: #F0ECFF !important;
+}
+
+.page-title a:hover {
+    color: white !important;
+}
+
+td {
+    /* border-bottom: 1px solid rgb(228, 228, 228) !important; */
+}
+
+td:nth-of-type(1) {
+    font-weight: bold;
+    width: 30%;
+}
+
+td:nth-of-type(2) {
+    width: 45%;
+}
+
+td:nth-of-type(3) {
+    font-style: italic;
+    width: 25%;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #FCFBFF;
+}
+
+tr:nth-of-type(even) {
+    background-color: white;
+}
+
+th {
+    background-color: rgb(240, 236, 255) !important;
+    border-top: none !important;
+}
+
+th h5 {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+iframe {
+    border: 0;
+    height: 400px;
+    margin-left: -1rem;
+}
+
+.collapser {
+    color: #8174E2;
+}
+
+.collapser:before {
+    content: "\2212";
+    padding-right: 5px;
+}
+
+.workshop .collapser {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.workshop .collapser:hover {
+    color: #463280;
+}
+
+.collapsed:not(.navbar-toggler):before {
+    content: "\002B" !important;
+}
+
+.accordion .card-header {
+    background-color: white !important;
+    border: none;
+    text-align: left;
+}
+
+.accordion .card {
+    border: none;
+}
+
+.btn-link {
+    text-decoration: none !important;
+    color: #8174E2;
+    font-weight: bold !important;
+    text-align: left;
+}
+
+.btn-link:before {
+    content: "\2212" !important;
+}
+
+.collapsed.btn-link:before {
+    content: "\002B" !important;
+}
+
+.btn-link:hover {
+    color: #463280;
+}
+
+.card-body {
+    padding-left: 2rem;
+}
+
+#help,
+#demo,
+#faq,
+#parking,
+#bus,
+#map,
+#rules,
+#eventschedule,
+#workshopschedule,
+#mentors,
+#volunteers, #directors {
+    padding-top: 5rem;
+    margin-top: -5rem !important;
+}
+
+#headshots > div {
+    width: 250px;
+    text-align: center;
+}
+
+#headshots img {
+    width: 200px;
+    height: 200px;
+}
+
+#headshots h3 {
+    font-size: larger;
+}
+
+#headshots h4 {
+    font-size: medium;
+}
