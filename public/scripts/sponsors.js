@@ -49,7 +49,7 @@ function buildHTMLString(data) {
 }
 
 $(document).ready(function () {
-    fetchData('1biudrolhcYpl1ldsUFrGwR38bS3UaBWApW-ui1x1Gvc', '1').then((data) => {
+    fetchData('1kgP_HSuMv5Jl_VjZghFuIXBE_nTogxJO2CS2IR63Ik0', '3').then((data) => {
         document.getElementById("sponsors").innerHTML = buildHTMLString(data.filter(item => item))
     });
 });

@@ -39,7 +39,7 @@ function buildHapeningNow(events) {
 }
 
 $(document).ready(function () {
-    fetchData('1Dgw8Iu_UupbrTwnYgy-MAAeHTHQgcgYhgHa93wQk2M4', '1').then((data) => {
+    fetchData('1kgP_HSuMv5Jl_VjZghFuIXBE_nTogxJO2CS2IR63Ik0', '5').then((data) => {
         data = data.filter(item => item != null).map(row => convertToEST(row));
         
         // Update the table every 1 second
