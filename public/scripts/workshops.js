@@ -89,7 +89,7 @@ function convertToLocalTime(row) {
 
 $(document).ready(function () {
     let workshops = "";
-    fetchData('15L2munTuAObRbaxE48rTaveJnVm_iC5uJCEDYt82y9E', '1').then((data) => {
+    fetchData('1kgP_HSuMv5Jl_VjZghFuIXBE_nTogxJO2CS2IR63Ik0', '4').then((data) => {
         workshops += buildWorkshops(data.filter(item => item != null).map(item => convertToLocalTime(item)));
         document.getElementById("workshops").innerHTML = workshops;
     });

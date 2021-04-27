@@ -19,7 +19,7 @@ function buildHTMLString(data) {
 
 $(document).ready(function () {
     // Director Info
-    fetchData('17j3aAtsRJnVuc1V-LDJRF_HLASZNO-J1gPudoXgmbWU', '1').then((data) => {
+    fetchData('1kgP_HSuMv5Jl_VjZghFuIXBE_nTogxJO2CS2IR63Ik0', '1').then((data) => {
         document.getElementById("directorinfo").innerHTML = buildHTMLString(data)
     });
 });

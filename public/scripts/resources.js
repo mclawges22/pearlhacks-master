@@ -24,7 +24,7 @@ function partitionResources(data) {
 }
 
 $(document).ready(function () {
-    fetchData('1BGIwq8YTtXVaFZjRDPbZcZNe06KYFepPu3CG1lvyVpM', '4').then((data) => {
+    fetchData('1kgP_HSuMv5Jl_VjZghFuIXBE_nTogxJO2CS2IR63Ik0', '7').then((data) => {
         let groups = partitionResources(data.filter(item => !!item));
         document.getElementById("resources").innerHTML = buildHTMLString(groups)
     });

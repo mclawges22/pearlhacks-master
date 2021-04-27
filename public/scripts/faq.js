@@ -1,21 +1,34 @@
-function buildHTMLString(data, target) {
-    let html = "<div class='row'>";
+function buildFAQs(groups) {
+    let html ="";
+
+    Object.keys(groups).forEach(key => {
+        html += buildHTMLString(groups[key], key);
+    });
+
+    return html;
+}
+
+function buildHTMLString(data, key) {
+    let id = key.replaceAll(" ", "").replaceAll("'", "").toLowerCase();
+    console.log(id);
+    let html = `<h2 class='mt-5'>${key}</h2>`;
+    html += "<div class='row'>";
     let col1 = "<div class='col-12 col-lg-6'>";
     let col2 = "<div class='col-12 col-lg-6'>";
     data.forEach((question, i) => {
         if (i < data.length / 2) {
             col1 += `
             <div class='rounded collapse-wrapper mb-2'>
-                <h3 class='h5 m-0 font-weight-normal collapser collapsed' data-toggle="collapse" aria-expanded="false" data-target="#${target}${i}">${question['Question']}</h3>
-                <div class="collapse py-2 pr-2" id="${target}${i}">${question['Answer']}</div>
+                <h3 class='h5 m-0 font-weight-normal collapser collapsed' data-toggle="collapse" aria-expanded="false" data-target="#${id}${i}">${question['Question']}</h3>
+                <div class="collapse py-2 pr-2" id="${id}${i}">${question['Answer']}</div>
             </div>`
         }
 
         else {
             col2 += `
             <div class='rounded collapse-wrapper mb-2'>
-                <h3 class='h5 m-0 font-weight-normal collapser collapsed' data-toggle="collapse" aria-expanded="false" data-target="#${target}${i}">${question['Question']}</h3>
-                <div class="collapse py-2 pr-2" id="${target}${i}">${question['Answer']}</div>
+                <h3 class='h5 m-0 font-weight-normal collapser collapsed' data-toggle="collapse" aria-expanded="false" data-target="#${id}${i}">${question['Question']}</h3>
+                <div class="collapse py-2 pr-2" id="${id}${i}">${question['Answer']}</div>
             </div>`
         }
     });
@@ -26,19 +39,22 @@ function buildHTMLString(data, target) {
     return html;
 }
 
+function partitionFAQs(data) {
+    let groups = {};
+    data.forEach(item => {
+        if (!groups[item["Category"]]) {
+            groups[item["Category"]] = [];
+        }
+        groups[item["Category"]].push(item);
+    });
+    
+    return groups;
+}
+
+
 $(document).ready(function () {
-    // Beginner FAQ
-    fetchData('1BGIwq8YTtXVaFZjRDPbZcZNe06KYFepPu3CG1lvyVpM', '1').then((data) => {
-        document.getElementById("beginnerfaq").innerHTML = buildHTMLString(data, "beginnersfaq")
-    });
-
-     // General FAQ
-     fetchData('1BGIwq8YTtXVaFZjRDPbZcZNe06KYFepPu3CG1lvyVpM', '2').then((data) => {
-        document.getElementById("generalfaq").innerHTML = buildHTMLString(data, "generalfaq")
-    });
-
-     // Guidelines
-     fetchData('1BGIwq8YTtXVaFZjRDPbZcZNe06KYFepPu3CG1lvyVpM', '3').then((data) => {
-        document.getElementById("guidelines").innerHTML = buildHTMLString(data, "guidelines")
+    fetchData('1kgP_HSuMv5Jl_VjZghFuIXBE_nTogxJO2CS2IR63Ik0', '2').then((data) => {
+        let groups = partitionFAQs(data.filter(item => !!item));
+        document.getElementById("faqs").innerHTML = buildFAQs(groups);
     });
 });
