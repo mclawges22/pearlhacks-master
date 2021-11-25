@@ -261,11 +261,10 @@ main h4 {
 }
 
 main p {
-  font-weight: 300;
-  font-size: 1.15rem;
-  line-height: 1.725rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
-
 /* SPECIFIC CLASSES */
 .raise {
   position: relative;
@@ -333,11 +332,11 @@ i.bg-light {
   background-position: center;
 }
 
-/*wave
+
 #decoration1 {
     width: 100vw;
     height: 20vw;
-    background-image: url('');
+    background-image: url('assets/images/headerwave.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -346,12 +345,12 @@ i.bg-light {
     width: 100vw;
     height: 15vw;
     max-height: 300px;
-    background-image: url('');
+    background-image: url('assets/images/headerwave.svg');
     background-repeat: no-repeat;
     background-size: 120% 100%;
     background-position: center;
 }
-*/
+
 @media (min-width: 992px) {
   #home_main {
     height: 100%;
@@ -473,7 +472,8 @@ i.bg-light {
 }
 
 .navbar-nav a:hover {
-  color: var(--midblue) !important;
+  color: var(--darkblue) !important;
+  transform: scale(1.1);
 }
 
 .navbar-brand span,
@@ -488,7 +488,7 @@ i.bg-light {
   content: none !important;
 }
 
-.transparent-nav a.nav-link:hover {
+#homepage .transparent-nav a.nav-link:hover {
   color: var(--light) !important;
   transform: scale(1.1);
 }
@@ -499,7 +499,12 @@ i.bg-light {
   letter-spacing: 0.5px;
 }
 
-
+/*.navbar:not(#homepage .navbar) {
+  background-color: var(--darkblue);
+}
+.navbar span:not(#homepage .navbar span) , .navbar span b:not(#homepage .navbar span b), .navbar a:not(#homepage .navbar a) {
+  color: white;
+}*/
 /* DROPDOWN MENU */
 @media only screen and (min-width: 992px) {
   #navbar-dropdown {
@@ -753,11 +758,12 @@ h3.resource-link a:hover{
   width: 100vw;
   height: 15vw;
   max-height: 300px;
-  background-image: url('images/header.svg');
+  background-image: url('images/wave.svg');
   background-repeat: no-repeat;
   background-size: 120% 100%;
   background-position: center;
 }
+
 #decoration2-desktop {
   width: 100vw;
   height: 15vw;
@@ -774,12 +780,41 @@ h3.resource-link a:hover{
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-
 @media all and (min-width: 992px){
-   #decoration2-desktop {
-    max-height: 100px;
+#decoration1 {
+  width: 100vw;
+  height: 15vw;
+  max-height: 300px;
+  min-height: 200px;
+  background-image: url('images/headerwave.svg');
+  background-repeat: no-repeat;
+  background-size: 120% 100%;
+  background-position: center;
+  padding-top: 2rem;
 }
-#decoration1-desktop{
-  max-height: 100px;
 }
+@media all and (max-width: 991px){
+  #decoration1 {
+    width: 100vw;
+    height: 20vw;
+    max-height: 300px;
+    min-height: 200px;
+    background-image: url('images/headerwave.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;padding-top: 2rem;
+  }
+}
+
+#decoration1-desktop header, #decoration1 header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 500px){
+  #decoration1 header h1{
+    font-size: 2.2rem
+  }
+  #faq h2, #aboutus h2, #resourcepage #resources h2{
+    font-size: 2rem;
+  }
 }

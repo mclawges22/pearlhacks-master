@@ -24,13 +24,13 @@ async function getResource() {
     for (let r = 0; r < resource.length; r++) {
         if(category[r] == "Hackathon Projects"){
             projects+= `<div class="col-xs-12 col-md-6"><h3 class="mt-2 resource-link">
-            <a href="${resourceLink[r]}" style = "color: var(--darkblue)" target="_blank">${resource[r]}</a></h3> <p>${more[r] ? more[r] : ""}</p> </div>`
+            <a href="${resourceLink[r]}" style = "color: var(--darkblue)" target="_blank">${resource[r]}</a></h3> </div>`
         } else if (category[r] == "General Hacking"){
             resources+= `<div class="col-xs-12 col-md-6"><h3 class="mt-2 resource-link">
-            <a href="${resourceLink[r]}" style = "color: var(--darkblue)" target="_blank">${resource[r]}</a></h3> <p>${more[r] ? more[r] : ""}</p> </div>`
+            <a href="${resourceLink[r]}" style = "color: var(--darkblue)" target="_blank">${resource[r]}</a></h3> </div>`
         } else if (category[r] == "Non-Traditional Technologists"){
             womenintech += `<div class="col-xs-12 col-md-6"><h3 class="mt-2 resource-link">
-            <a href="${resourceLink[r]}" style = "color: var(--darkblue)" target="_blank">${resource[r]}</a></h3> <p>${more[r] ? more[r] : ""}</p> </div>`
+            <a href="${resourceLink[r]}" style = "color: var(--darkblue)" target="_blank">${resource[r]}</a></h3>  </div>`
         }
     }
 

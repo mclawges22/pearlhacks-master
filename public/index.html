@@ -86,11 +86,13 @@
     <script src="assets/scripts/sponsors.js"></script>
     <script src="assets/scripts/stars.js"></script>
     <script src="assets/scripts/transparentnav.js"></script>
+    <script src="assets/scripts/countdown.js"></script>
+
 
     <title>Pearl Hacks</title>
   </head>
 
-  <body>
+  <body id = "homepage">
     <header></header>
     <main>
       <!-- JUMBOTRON -->
@@ -143,15 +145,14 @@
                   class="text-white mr-3 fas fa-map-marker-alt"
                   aria-hidden="true"
                 ></i
-                >Join us in-person or virtually
+                >Hybrid event
               </p>
-              <!--p class="font-weight-bold" style="color: #fff">
+              <p class="font-weight-bold" style="color: #fff" id = "countdown">
                 <i
                   class="fas fa-stopwatch text-white mr-2"
                   aria-hidden="true"
                 ></i>
-                Registration opens Nov. 7th :)
-              </p-->
+              </p>
               <p class="pt-3 raise d-none d-lg-inline">
                 <a
                   class="btn btn-main"
@@ -176,7 +177,7 @@
                 alt="pearl hacks mascot"
               />
             </div>
-            <div class="col-12 text-center">
+            <div class="col-12 text-center" style="z-index: 20">
               <p class="pt-2 d-lg-none">
                 <a
                   class="btn btn-main"
