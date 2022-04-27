@@ -1,5 +1,6 @@
 {
   "projects": {
-    "production": "pearlhacks-master"
+    "production": "pearlhacks-master",
+    "default": "pearlhacks-master"
   }
 }
