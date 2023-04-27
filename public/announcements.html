@@ -17,12 +17,12 @@
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
     <meta http-equiv='Cache-control' content='public'>
     <meta name='description'
-        content='Pearl Hacks is a hackathon for female and non-binary students. We especially cater to first-time hackers who are looking for a supportive environment to explore technology.'>
+        content='Pearl Hacks is a hackathon for female and gender non-conforming students. We especially cater to first-time hackers who are looking for a supportive environment to explore technology.'>
     <meta name='google-site-verification' content='BVA1NKpsy9IenrjkPDUVV9naJOgnlX8MpPhV5wT_c0w' />
 
     <!-- Favicon -->
-    <link rel='icon' href='assets/images/ph-favicon.png' type='image/png' />
-    <link rel='shortcut icon' href='assets/images/ph-favicon.png' type='image/png' />
+    <link rel='icon' href='assets/images/ph-favicon.svg' type='image/svg' />
+    <link rel='shortcut icon' href='assets/images/ph-favicon.svg' type='image/svg' />
 
     <!-- CSS (Bootstrap, Custom Styles -->
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'
@@ -44,20 +44,28 @@
     <!-- Custom Scripts -->
     <script>
         $(document).ready(function () {
-            $('body>footer').load('./components/footer.html');
-            $('body>header').load('./components/navbar.html');
+            $("body>footer").load("./components/footer.html");
+            $("body>header").load("./components/navbar.html");
             var scroll_pos = 0;
-            $(document).scroll(function() {
+            $(document).scroll(function () {
                 scroll_pos = $(this).scrollTop();
-                if(scroll_pos > 100) {
-                    $('.navbar').css('box-shadow', '0px 2px 3px rgb(0,0,0,.3)');
-                } else {
-                    $('.navbar').css('box-shadow', 'none');
+                if (scroll_pos > 100) {
+                    $(".navbar").css("box-shadow", "0px 2px 3px rgb(0,0,0,.3)");
+                } else if (scroll_pos <= 100) {
+                    $(".navbar").css("box-shadow", "none");
+                }
+                if (window.pageYOffset < 100) {
+                    $(".navbar").css("background-color", "var(--beige)");
+                }
+                if (window.pageYOffset > 100) {
+                    $(".navbar").css("background-color", "white");
                 }
             });
         });
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js" integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"
+        integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Announcements | Pearl Hacks</title>
 </head>
 
@@ -65,62 +73,46 @@
     <header>
 
     </header>
-    <main id = "schedule">
+    <main id="schedule" style="background-color: var(--beige);">
         <div id="decoration1">
             <header class="py-0 m-0">
-            <h1 style = "background: var(--darkblue); color: var(--lightblue)" class="py-3 m-0">Announcements</h1>
-          </header>
-          </div>
-          <section class="container py-4" id ="aboutus" style="max-width: 52rem; margin: 0 auto;">
-            <article class = "p-5 mb-4" style="background-color: aliceblue; box-shadow: 0 0.25rem 1rem -0.5rem rgba(0, 0, 0, 0.4);">
+                <h1 style="background: var(--darkblue); color: var(--lightblue)" class="py-3 m-0">Announcements</h1>
+            </header>
+        </div>
+        <section class="container py-4" id="aboutus" style="max-width: 52rem; margin: 0 auto;">
+            <article class="p-5 mb-4"
+                style="background-color: aliceblue; box-shadow: 0 0.25rem 1rem -0.5rem rgba(0, 0, 0, 0.4);">
                 <h2 class="pb-3 mx-1">Registration</h2>
-                <p class = "mx-1">Registration is NOW OPEN for our 2022 hybrid hackathon! #DiscoverWithPearlHacks virtually or in-person for a weekend of empowerment, creativity, and fun! Students of ALL skill levels are encouraged to participate! <br> Registration is limited to women and non-binary students, however ANYONE can be a mentor!</p>
-                <a
-                class="btn btn-main mx-1 mt-2"
-                href="https://form.typeform.com/to/vGGxFDzC"
-                target="new"
-                role="button"
-                >Hackers</a>
-                <a
-                class="btn btn-main mx-1 mt-2"
-                href="https://form.typeform.com/to/FLAYeimQ"
-                target="new"
-                role="button"
-                >Mentors</a>
-                <a
-                class="btn btn-main mx-1 mt-2"
-                href="https://form.typeform.com/to/v5SN3ZqY"
-                target="new"
-                role="button"
-                >Volunteers</a>
+                <p class="mx-1">Registration is NOW OPEN for our 2022 hybrid hackathon! #DiscoverWithPearlHacks
+                    virtually or in-person for a weekend of empowerment, creativity, and fun! Students of ALL skill
+                    levels are encouraged to participate! <br> Registration is limited to women and gender
+                    non-conforming students,
+                    however ANYONE can be a mentor!</p>
+                <a class="btn btn-main mx-1 mt-2" href="https://form.typeform.com/to/vGGxFDzC" target="new"
+                    role="button">Hackers</a>
+                <a class="btn btn-main mx-1 mt-2" href="https://form.typeform.com/to/FLAYeimQ" target="new"
+                    role="button">Mentors</a>
+                <a class="btn btn-main mx-1 mt-2" href="https://form.typeform.com/to/v5SN3ZqY" target="new"
+                    role="button">Volunteers</a>
             </article>
-            <article class = "p-5 mb-4" style="background-color: aliceblue; box-shadow: 0 0.25rem 1rem -0.5rem rgba(0, 0, 0, 0.4);">
+            <article class="p-5 mb-4"
+                style="background-color: aliceblue; box-shadow: 0 0.25rem 1rem -0.5rem rgba(0, 0, 0, 0.4);">
                 <h2 class="pb-3 mx-1">Discord</h2>
                 <p class="mx-1">Join our Pearl Hacks Discord server to connect with hackers and sponsors.</p>
-                <a
-                class="btn btn-main mx-1 mt-2"
-                href="http://bit.ly/PHDiscord22"
-                target="new"
-                role="button"
-                >Discord</a>
-                
-            </article>    
-        <article class = "p-5" style="background-color: aliceblue; box-shadow: 0 0.25rem 1rem -0.5rem rgba(0, 0, 0, 0.4);">
-            <h2 class = "pb-3 mx-1">Schedule</h2>
-            <p class="mx-1">Schedule is out now!</p>
-            <a
-            class="btn btn-main mx-1 mt-2"
-            href="./schedule.html"
-            target="new"
-            role="button"
-            >Schedule</a>
+                <a class="btn btn-main mx-1 mt-2" href="http://bit.ly/PHDiscord22" target="new"
+                    role="button">Discord</a>
+
             </article>
-          </section>
+            <article class="p-5"
+                style="background-color: aliceblue; box-shadow: 0 0.25rem 1rem -0.5rem rgba(0, 0, 0, 0.4);">
+                <h2 class="pb-3 mx-1">Schedule</h2>
+                <p class="mx-1">Schedule is out now!</p>
+                <a class="btn btn-main mx-1 mt-2" href="./schedule.html" target="new" role="button">Schedule</a>
+            </article>
+        </section>
 
     </main>
-    <footer>
-
-    </footer>
+    <footer style="background-color: var(--beige);"></footer>
 </body>
 
 </html>

@@ -17,8 +17,8 @@
     </script>
 
     <!-- Meta Tags-->
-    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -26,7 +26,7 @@
     <meta http-equiv="Cache-control" content="public" />
     <meta
       name="description"
-      content="Pearl Hacks is a hackathon for female and non-binary students. We especially cater to first-time hackers who are looking for a supportive environment to explore technology."
+      content="Pearl Hacks is a hackathon for female and gender non-conforming students. We especially cater to first-time hackers who are looking for a supportive environment to explore technology."
     />
     <meta
       name="google-site-verification"
@@ -34,11 +34,11 @@
     />
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/images/ph-favicon.png" type="image/png" />
+    <link rel="icon" href="assets/images/ph-favicon.svg" type="image/svg" />
     <link
       rel="shortcut icon"
-      href="assets/images/ph-favicon.png"
-      type="image/png"
+      href="assets/images/ph-favicon.svg"
+      type="image/svg"
     />
 
     <!-- CSS (Bootstrap, Custom Styles -->
@@ -78,9 +78,22 @@
       $(document).ready(function () {
         $("body>footer").load("./components/footer.html");
         $("body>header").load("./components/navbar.html");
+        var scroll_pos = 0;
+        $(document).scroll(function () {
+          scroll_pos = $(this).scrollTop();
+          if (scroll_pos > 100) {
+            $(".navbar").css("box-shadow", "0px 2px 3px rgb(0,0,0,.3)");
+          } else if (scroll_pos <= 100) {
+            $(".navbar").css("box-shadow", "none");
+          }
+          if (window.pageYOffset < 100) {
+            $(".navbar").css("background-color", "var(--beige)");
+          }
+          if (window.pageYOffset > 100) {
+            $(".navbar").css("background-color", "white");
+          }
+        });
       });
-
-      // Show the first tab and hide the rest
     </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"
@@ -94,19 +107,32 @@
 
   <body style="background-color: aliceblue">
     <header></header>
-    <main id="workshoppage">
+    <main id="workshoppage" style="background-color: var(--beige)">
       <div id="decoration1">
         <header class="py-0 m-0">
-          <h1
-            style="background-color: var(--darkblue); color: var(--lightblue)"
-            class="py-3 m-0"
-          >
-            Workshop Schedule
-          </h1>
+          <h1 class="py-3 m-0">Workshop Schedule</h1>
         </header>
       </div>
-      <div class="text-center container my-5">
-        <p>Check out our <a href="https://www.notion.so/Pearl-Hacks-Hacker-Guide-2022-531155aee9a44ab68fcd11c47f5fc26f">Pearl Hacks 2022 Hacker Guide</a> for more information!</p>
+      <div class="text-center container">
+        <p class="text-center">
+          <b
+            >Download the Google Calendar
+            <a
+              href="https://calendar.google.com/calendar/u/3/r?cid=YzcwODRhMDA0YjRkZjI5ZTVlMDJkZTIwYWUyYWJmN2MwYTRlZGQ1OGU2YThmNzIwMGM1MmU1MzYxZjc0M2QwM0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+              >here</a
+            ></b
+          >
+        </p>
+        <p>
+          Check out our
+          <a href="https://bit.ly/PH23HackerGuide"
+            >Pearl Hacks 2023 Hacker Guide</a
+          >
+          for more information!
+        </p>
+        <p class="text-center">
+          *Schedule is listed in Eastern Standard Time (EST)
+        </p>
         <div style="overflow-x: auto" class="mt-5">
           <table class="table workshop mb-0">
             <tbody id="workshop-content">
@@ -127,8 +153,7 @@
             </tbody>
           </table>
         </div>
-       
-    </div>
+      </div>
       <!--
                 <tr>
                     <td>1:15-2:15</td>
@@ -466,6 +491,6 @@
                 </tr>
             </tbody>-->
     </main>
-    <footer></footer>
+    <footer style="background-color: var(--beige)"></footer>
   </body>
 </html>
