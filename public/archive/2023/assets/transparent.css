@@ -1,0 +1,46 @@
+.transparent-nav {
+    background-color: transparent !important;
+    box-shadow: none !important
+}
+
+.transparent-nav a {
+    color: var(--darkgreen) !important
+}
+
+.transparent-nav a.dropdown-item {
+    color: var(--darkgreen) !important
+}
+
+.transparent-nav a.dropdown-item:hover {
+    color: var(--red) !important
+}
+
+.transparent-nav .navbar-brand span,
+.transparent-nav .navbar-brand b {
+    /* color: white !important; */
+    color: var(--red) !important;
+    font-weight: 700
+}
+
+.transparent-nav .navbar-toggler i {
+    /* color: white !important */
+    color: var(--red) !important
+}
+
+.jumbotron {
+    margin-top: -60px
+}
+
+main p {
+    font-weight: 500
+}
+
+.nav-background {
+    background-color: var(--beige)
+}
+
+/* @media (min-width:992px) {
+    .nav-background {
+        background-color: var(--beige)
+    }
+} */

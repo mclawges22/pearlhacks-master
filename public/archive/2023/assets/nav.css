@@ -1,0 +1,24 @@
+@media (min-width:1350px) {
+    .navbar {
+        background-color: var(--beige)
+    }
+
+    .navbar-nav a {
+        color: var(--darkgreen)
+    }
+
+    .navbar-nav a:hover {
+        color: var(--red) !important;
+        transform: scale(1.01)
+    }
+
+    .navbar-brand span,
+    .navbar-brand b {
+        font-family: var(--secondary-font) !important;
+        color: #fff
+    }
+
+    #navbar-dropdown>ul>li.nav-item.dropdown.show>div>a:hover {
+        color: var(--darkgreen) !important
+    }
+}
